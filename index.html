@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TaskAt - Stop Chasing Clients for Approvals</title>
+  <meta name="description" content="Turn 'waiting on client' into a system. Email-first client requests and approvals without the portal drama.">
+  <meta name="keywords" content="client approvals, agency workflow, client requests, project management">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.png" alt="TaskAt">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#starter-kits">Starter Kits</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#waitlist">Get Early Access</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+            <div class="hero-content">
+              <h1 class="hero-title">Stop chasing clients for approvals and assets.</h1>
+              <p class="hero-description">Send one-click requests from email (upload / answer / approve). TaskAt auto-follows up until it's done and shows what's blocking delivery.</p>
+              <div class="hero-actions">
+                <a href="#waitlist" class="btn-primary">Get early access</a>
+                <a href="#demo" class="btn-secondary">
+                  <i class="bi bi-play-circle"></i>
+                  <span>See the 60-second demo</span>
+                </a>
+              </div>
+              <div class="hero-trust">
+                <p class="trust-text">No client training. No switching your project tool.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="300">
+            <div class="hero-visual">
+              <div class="email-request-card">
+                <div class="card-header">
+                  <span class="from-label">From: you@agency.com</span>
+                  <h3>Approve Q1 Content Calendar</h3>
+                  <p>Review and approve the proposed content calendar for January-March.</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-approve">Approve</button>
+                  <button class="btn-request-changes">Request changes</button>
+                </div>
+              </div>
+              <div class="dashboard-snippet">
+                <div class="dashboard-header">Waiting on client</div>
+                <div class="client-row">
+                  <span class="client-name">Acme Corp</span>
+                  <span class="status-badge blocked">Blocked 4 days</span>
+                </div>
+                <div class="client-row">
+                  <span class="client-name">TechStart Inc</span>
+                  <span class="status-badge overdue">Overdue 2 days</span>
+                </div>
+                <div class="client-row">
+                  <span class="client-name">BrandCo</span>
+                  <span class="status-badge waiting">Waiting 1 day</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="section-title">Your team isn't slow. Your clients are.</h2>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pain-point">
+              <i class="bi bi-envelope-x"></i>
+              <h4>Approvals buried in email threads</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="pain-point">
+              <i class="bi bi-file-earmark-break"></i>
+              <h4>Missing assets stall timelines</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pain-point">
+              <i class="bi bi-clock-history"></i>
+              <h4>Account managers spend hours nudging</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="pain-point">
+              <i class="bi bi-x-circle"></i>
+              <h4>Clients won't log into ClickUp/Asana</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="pain-point">
+              <i class="bi bi-arrows-angle-contract"></i>
+              <h4>Revision creep because feedback is scattered</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="350">
+            <p class="tagline">TaskAt is built for the part nobody wants to manage: client follow-ups.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Problem Section -->
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works section dark-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Works from email. Keeps projects moving.</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <div class="step-icon">
+                <i class="bi bi-pencil-square"></i>
+              </div>
+              <h3>Create a request</h3>
+              <p>Choose Upload / Answer / Approve. Start from a template.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <div class="step-icon">
+                <i class="bi bi-cursor"></i>
+              </div>
+              <h3>Client completes it in one click</h3>
+              <p>No account required. Clean, focused action page.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <div class="step-icon">
+                <i class="bi bi-bell"></i>
+              </div>
+              <h3>TaskAt follows up + tracks blockers</h3>
+              <p>Automatic reminders + a dashboard that shows what's at risk.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /How It Works Section -->
+
+    <!-- Starter Kits Section -->
+    <section id="starter-kits" class="starter-kits section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Start with your workflow.</h2>
+        <p>Same engine. Two templates.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Toggle Buttons -->
+        <div class="text-center mb-5">
+          <div class="btn-group starter-toggle" role="group">
+            <button type="button" class="btn btn-toggle active" data-target="marketing">
+              Marketing retainers
+            </button>
+            <button type="button" class="btn btn-toggle" data-target="design">
+              Design/web projects
+            </button>
+          </div>
+        </div>
+
+        <!-- Marketing Retainers Panel -->
+        <div class="starter-panel active" id="marketing-panel">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h3>Marketing retainers</h3>
+
+              <div class="starter-feature">
+                <h4>What it does</h4>
+                <ul>
+                  <li>Collect promos/assets for next month</li>
+                  <li>Approve content calendar</li>
+                  <li>Approve final creatives</li>
+                </ul>
+              </div>
+
+              <div class="starter-outcome">
+                <h4>Outcome</h4>
+                <p>Fewer missed publish dates. Less chasing.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="workflow-visual">
+                <div class="flow-step">
+                  <span class="status-chip upload">Upload</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                  <span class="status-chip approve">Approve</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                  <span class="status-chip approve">Approve</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                  <span class="status-chip done">Done</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design/Web Projects Panel -->
+        <div class="starter-panel" id="design-panel">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h3>Design/web projects</h3>
+
+              <div class="starter-feature">
+                <h4>What it does</h4>
+                <ul>
+                  <li>Kickoff intake checklist</li>
+                  <li>Wireframes → design → build approvals</li>
+                  <li>Content completeness tracker</li>
+                </ul>
+              </div>
+
+              <div class="starter-outcome">
+                <h4>Outcome</h4>
+                <p>Faster signoff. Fewer endless tweaks.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="workflow-visual">
+                <div class="flow-step">
+                  <span class="status-chip upload">Intake</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                  <span class="status-chip approve">Wireframes</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                  <span class="status-chip approve">Design</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+                <div class="flow-step">
+                  <span class="status-chip done">Launch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Starter Kits Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section dark-background">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-envelope-check"></i>
+              </div>
+              <h4>Email-first by default</h4>
+              <p>Clients do the thing from email. Portal is optional.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h4>Auto reminders that don't annoy</h4>
+              <p>24h / 72h / 7d nudges with timeline impact.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-exclamation-triangle"></i>
+              </div>
+              <h4>Waiting-on-client dashboard</h4>
+              <p>See blockers, days blocked, and one-click nudges.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-check-circle"></i>
+              </div>
+              <h4>Approval proof</h4>
+              <p>Know exactly who approved what and when.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-box">
+              <div class="feature-icon">
+                <i class="bi bi-file-text"></i>
+              </div>
+              <h4>Templates + AI setup</h4>
+              <p>Describe the engagement; TaskAt generates the checklist + approval steps.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Features Section -->
+
+    <!-- Social Proof Section -->
+    <section id="social-proof" class="social-proof section">
+      <div class="container">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center" data-aos="fade-up">
+            <p class="micro-proof">Built with agency operators</p>
+            <p class="looking-for">Looking for 10 beta agencies</p>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-4 justify-content-center">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="quote-card">
+              <p>"We lost 6 hours/week to follow-ups."</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="quote-card">
+              <p>"Clients never log into our PM tool."</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="quote-card">
+              <p>"Approvals were always unclear."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Social Proof Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section dark-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing that scales with clients, not seats.</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card">
+              <h3>Starter</h3>
+              <p class="pricing-desc">Up to 10 active clients</p>
+              <div class="pricing-note">Beta pricing available for early access members</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+            <div class="pricing-card featured">
+              <h3>Pro</h3>
+              <p class="pricing-desc">Up to 50 active clients + branding + custom reminders</p>
+              <div class="pricing-note">Beta pricing available for early access members</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card">
+              <h3>Studio</h3>
+              <p class="pricing-desc">Unlimited clients + advanced features</p>
+              <div class="pricing-note">Beta pricing available for early access members</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Pricing Section -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Do clients need accounts?</h3>
+                <div class="faq-content">
+                  <p>No, secure links from email.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Does this replace Asana/ClickUp?</h3>
+                <div class="faq-content">
+                  <p>No — it complements them.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>What files can clients upload?</h3>
+                <div class="faq-content">
+                  <p>Anything you accept today.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>Can I use it for retainers and projects?</h3>
+                <div class="faq-content">
+                  <p>Yes, templates for both.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /FAQ Section -->
+
+    <!-- Waitlist/CTA Section -->
+    <section id="waitlist" class="waitlist section dark-background">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Want us to set up your first client flow?</h2>
+            <p class="setup-note">We'll configure your kickoff + approvals template for one client.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-6">
+            <form action="forms/waitlist.php" method="post" class="waitlist-form" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="mb-4">
+                <input type="email" name="email" class="form-control" placeholder="Your email" required>
+              </div>
+
+              <div class="mb-4">
+                <select name="business_type" class="form-select" required>
+                  <option value="">I run...</option>
+                  <option value="marketing">Marketing retainer</option>
+                  <option value="design">Design projects</option>
+                  <option value="consulting">Consulting</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <select name="client_count" class="form-select">
+                  <option value="">Number of active clients (optional)</option>
+                  <option value="1-10">1–10</option>
+                  <option value="11-30">11–30</option>
+                  <option value="31-100">31–100</option>
+                  <option value="100+">100+</option>
+                </select>
+              </div>
+
+              <div class="text-center">
+                <div class="cta-buttons">
+                  <button type="submit" class="btn btn-cta-primary">Join the waitlist</button>
+                  <a href="#demo" class="btn btn-cta-secondary">Book a 15-minute setup call</a>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- /Waitlist Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">TaskAt</span>
+          </a>
+          <p>Stop chasing clients. Start delivering.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p><strong>Email:</strong> <span>hello@taskat.ai</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TaskAt</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Starter Kits Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButtons = document.querySelectorAll('.btn-toggle');
+      const panels = document.querySelectorAll('.starter-panel');
+
+      toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const target = this.getAttribute('data-target');
+
+          // Update button states
+          toggleButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+
+          // Update panel states
+          panels.forEach(panel => panel.classList.remove('active'));
+          document.getElementById(target + '-panel').classList.add('active');
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
