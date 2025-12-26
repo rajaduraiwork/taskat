@@ -4516,6 +4516,23 @@ section,
   font-weight: 700;
 }
 
+/* Footer Credits */
+.credits {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.credits a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.credits a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .problem .section-title {
