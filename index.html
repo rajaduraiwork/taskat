@@ -154,55 +154,90 @@
     </section><!-- /Hero Section -->
 
     <!-- Problem Section -->
-    <section id="problem" class="problem section light-background">
+    <section id="problem" class="problem section-tight light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
-            <h2 class="section-title">Your team isn't slow. Your clients are.</h2>
+            <h2 class="section-title">Your team ships fast. Client follow-ups don't.</h2>
+            <p class="section-subtitle">That's normal. TaskAt fixes the follow-up layer.</p>
           </div>
         </div>
 
-        <div class="row gy-4 mt-4">
+        <div class="row gy-4 mt-3">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pain-point">
+            <div class="pain-point pain-blocked">
               <i class="bi bi-envelope-x"></i>
-              <h4>Approvals buried in email threads</h4>
+              <div class="pain-content">
+                <h4>Approvals buried in email threads</h4>
+                <p class="pain-impact">Missed approvals = missed deadlines.</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <div class="pain-point">
+            <div class="pain-point pain-overdue">
               <i class="bi bi-file-earmark-break"></i>
-              <h4>Missing assets stall timelines</h4>
+              <div class="pain-content">
+                <h4>Missing assets stall timelines</h4>
+                <p class="pain-impact">Launches slip waiting on "one last file."</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pain-point">
+            <div class="pain-point pain-waiting">
               <i class="bi bi-clock-history"></i>
-              <h4>Account managers spend hours nudging</h4>
+              <div class="pain-content">
+                <h4>Account managers spend hours nudging</h4>
+                <p class="pain-impact">Manual follow-ups drain your team's time.</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="pain-point">
+            <div class="pain-point pain-waiting">
               <i class="bi bi-x-circle"></i>
-              <h4>Clients won't log into ClickUp/Asana</h4>
+              <div class="pain-content">
+                <h4>Clients won't log into ClickUp/Asana</h4>
+                <p class="pain-impact">Portal adoption stays at zero.</p>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <div class="pain-point">
+            <div class="pain-point pain-highlight">
               <i class="bi bi-arrows-angle-contract"></i>
-              <h4>Revision creep because feedback is scattered</h4>
+              <div class="pain-content">
+                <h4>The cost of scattered feedback</h4>
+                <p class="pain-impact">Revision creep, scope confusion, and delays you can't bill for.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="row mt-5">
-          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="350">
-            <p class="tagline">TaskAt is built for the part nobody wants to manage: client follow-ups.</p>
+        <!-- Bridge Strip -->
+        <div class="bridge-strip" data-aos="fade-up" data-aos-delay="350">
+          <div class="bridge-step">
+            <div class="bridge-icon"><i class="bi bi-envelope-arrow-up"></i></div>
+            <span>Forward client email</span>
+          </div>
+          <div class="bridge-arrow"><i class="bi bi-chevron-right"></i></div>
+          <div class="bridge-step">
+            <div class="bridge-icon"><i class="bi bi-magic"></i></div>
+            <span>TaskAt extracts what's needed</span>
+          </div>
+          <div class="bridge-arrow"><i class="bi bi-chevron-right"></i></div>
+          <div class="bridge-step">
+            <div class="bridge-icon"><i class="bi bi-send-check"></i></div>
+            <span>Send one-click request + auto follow-ups</span>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+            <p class="tagline">TaskAt tracks what you're waiting on, drafts nudges, and collects uploads—without moving clients into your PM tool.</p>
+            <a href="#how-it-works" class="see-how-link">See how it works <i class="bi bi-arrow-down"></i></a>
           </div>
         </div>
 
@@ -213,6 +248,7 @@
     <section id="how-it-works" class="how-it-works section dark-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Works from email. Keeps projects moving.</h2>
+        <p class="section-subtitle">Forward client emails → send one-click requests → TaskAt follows up until it's done.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -220,112 +256,154 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="step-card">
-              <div class="step-number">1</div>
-              <div class="step-icon">
-                <i class="bi bi-pencil-square"></i>
+              <div class="step-header">
+                <span class="step-number">1</span>
+                <h3>Turn an email into a request</h3>
               </div>
-              <h3>Create a request</h3>
-              <p>Choose Upload / Answer / Approve. Start from a template.</p>
+              <div class="step-icon">
+                <i class="bi bi-envelope-arrow-up"></i>
+              </div>
+              <p>Forward a client email. TaskAt pulls out what you need: upload, approve, or answer.</p>
+              <div class="step-chips">
+                <span class="chip upload">Upload</span>
+                <span class="chip approve">Approve</span>
+                <span class="chip answer">Answer</span>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="step-card">
-              <div class="step-number">2</div>
+              <div class="step-header">
+                <span class="step-number">2</span>
+                <h3>Client completes it in one click</h3>
+              </div>
               <div class="step-icon">
                 <i class="bi bi-cursor"></i>
               </div>
-              <h3>Client completes it in one click</h3>
-              <p>No account required. Clean, focused action page.</p>
+              <p>No account. One clean action page — works on mobile.</p>
+              <div class="step-chips">
+                <span class="chip feature">No login</span>
+                <span class="chip feature">1-click</span>
+                <span class="chip feature">Mobile</span>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="step-card">
-              <div class="step-number">3</div>
-              <div class="step-icon">
-                <i class="bi bi-bell"></i>
+              <div class="step-header">
+                <span class="step-number">3</span>
+                <h3>TaskAt keeps it moving</h3>
               </div>
-              <h3>TaskAt follows up + tracks blockers</h3>
-              <p>Automatic reminders + a dashboard that shows what's at risk.</p>
+              <div class="step-icon">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <p>Draft nudges, schedule reminders, and flag what's stuck so nothing slips.</p>
+              <div class="step-chips">
+                <span class="chip status-risk">At risk</span>
+                <span class="chip status-nudge">Nudge draft</span>
+                <span class="chip status-reminder">Reminders</span>
+              </div>
             </div>
           </div>
 
+        </div>
+
+        <!-- CTA under cards -->
+        <div class="how-it-works-cta" data-aos="fade-up" data-aos-delay="400">
+          <a href="https://platform.taskat.ai" class="btn-primary">Get early access</a>
+          <a href="https://platform.taskat.ai" class="btn-secondary">
+            <i class="bi bi-play-circle"></i>
+            <span>See a real example</span>
+          </a>
         </div>
       </div>
     </section><!-- /How It Works Section -->
 
     <!-- Common Client Blockers Section -->
     <section id="blockers" class="blockers section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Common client blockers TaskAt handles</h2>
-        <p>Turn emails into trackable requests, send nudges, and collect uploads—without clients logging in.</p>
-      </div>
+      <div class="container-xl" data-aos="fade-up">
+        <div class="blockers-layout">
+          <!-- Left: Title + CTA -->
+          <div class="blockers-intro" data-aos="fade-right" data-aos-delay="100">
+            <h2>Common Client Blockers TaskAt Handles</h2>
+            <p class="blockers-punch">Stop losing days to approvals, assets, and "will do soon" replies.</p>
+            <p class="blockers-subhead">Turn emails into trackable requests. Clients complete them without logging in. You see exactly what's stuck.</p>
+            <ul class="blockers-benefits">
+              <li><i class="bi bi-check2"></i> No client portal to manage</li>
+              <li><i class="bi bi-check2"></i> Auto-reminders until done</li>
+              <li><i class="bi bi-check2"></i> Clear audit trail for every request</li>
+            </ul>
+            <div class="blockers-intro-cta">
+              <a href="https://platform.taskat.ai" class="btn-primary">Get early access</a>
+              <a href="use-cases.html" class="link-browse">Browse all use cases <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <p class="blockers-proof"><i class="bi bi-shield-check"></i> Forward-only. You control sending. Attachments encrypted.</p>
+          </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <a href="use-cases.html#uploads" class="blocker-tile">
+          <!-- Right: 2x3 Grid -->
+          <div class="blockers-grid">
+            <a href="use-cases.html#uploads" class="blocker-tile" data-aos="fade-up" data-aos-delay="100">
               <div class="blocker-icon">
                 <i class="bi bi-cloud-upload"></i>
               </div>
               <h3>Collect assets & files</h3>
-              <p>Logos, brand kits, W-9/COI, copy docs—all in one organized place.</p>
+              <p>Get logos, brand kits, W-9s, copy docs—delivered in one place.</p>
+              <span class="result-line">Fewer missing files at launch.</span>
             </a>
-          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-            <a href="use-cases.html#approvals" class="blocker-tile">
+            <a href="use-cases.html#approvals" class="blocker-tile" data-aos="fade-up" data-aos-delay="150">
               <div class="blocker-icon">
                 <i class="bi bi-check2-circle"></i>
               </div>
               <h3>Get approvals fast</h3>
-              <p>Ad copy, designs, budgets, scope changes—clear yes/no with timestamps.</p>
+              <p>Clear approve/changes with timestamps—no lost sign-offs.</p>
+              <span class="result-line">No more "I thought I approved that."</span>
             </a>
-          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <a href="use-cases.html#answers" class="blocker-tile">
+            <a href="use-cases.html#answers" class="blocker-tile" data-aos="fade-up" data-aos-delay="200">
               <div class="blocker-icon">
                 <i class="bi bi-chat-left-text"></i>
               </div>
               <h3>Chase missing answers</h3>
-              <p>Quick questions that stall delivery—tracked until resolved.</p>
+              <p>Turn quick questions into tracked requests until resolved.</p>
+              <span class="result-line">Questions don't fall through cracks.</span>
             </a>
-          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-            <a href="use-cases.html#access" class="blocker-tile">
+            <a href="use-cases.html#access" class="blocker-tile" data-aos="fade-up" data-aos-delay="250">
               <div class="blocker-icon">
                 <i class="bi bi-key"></i>
               </div>
               <h3>Confirm access & credentials</h3>
-              <p>GA4, Ads, Meta BM, Shopify invites—request and confirm securely.</p>
+              <p>Request GA4/Ads/Meta BM access safely—verify when it's done.</p>
+              <span class="result-line">Verify access, not promises.</span>
             </a>
-          </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <a href="use-cases.html#clarify" class="blocker-tile">
+            <a href="use-cases.html#clarify" class="blocker-tile" data-aos="fade-up" data-aos-delay="300">
               <div class="blocker-icon">
                 <i class="bi bi-question-circle"></i>
               </div>
-              <h3>Handle ambiguous replies</h3>
-              <p>"Ok" / "soon" / "maybe" → auto-clarify with smart follow-ups.</p>
+              <h3>Clarify vague responses</h3>
+              <p>"Ok/soon/maybe" → TaskAt asks the one clarifying question.</p>
+              <span class="result-line">Turns "soon" into a date.</span>
+            </a>
+
+            <a href="use-cases.html" class="blocker-tile" data-aos="fade-up" data-aos-delay="350">
+              <div class="blocker-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Escalate stalled requests</h3>
+              <p>Auto-escalates after 2 nudges or 7 days overdue.</p>
+              <span class="result-line">Routes to the right owner.</span>
             </a>
           </div>
-
         </div>
-
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="350">
-          <a href="use-cases.html" class="btn-browse-usecases">Browse all use cases <i class="bi bi-arrow-right"></i></a>
-        </div>
-
       </div>
     </section><!-- /Common Client Blockers Section -->
 
     <!-- Starter Kits Section -->
-    <section id="starter-kits" class="starter-kits section light-background">
+    <section id="starter-kits" class="starter-kits section dark-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Start with your workflow.</h2>
         <p>Same engine. Two templates.</p>
@@ -434,182 +512,180 @@
       </div>
     </section><!-- /Starter Kits Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section dark-background">
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-envelope-check"></i>
-              </div>
-              <h4>Email-first by default</h4>
-              <p>Clients do the thing from email. Portal is optional.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-clock"></i>
-              </div>
-              <h4>Auto reminders that don't annoy</h4>
-              <p>24h / 72h / 7d nudges with timeline impact.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-exclamation-triangle"></i>
-              </div>
-              <h4>Waiting-on-client dashboard</h4>
-              <p>See blockers, days blocked, and one-click nudges.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-check-circle"></i>
-              </div>
-              <h4>Approval proof</h4>
-              <p>Know exactly who approved what and when.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-file-text"></i>
-              </div>
-              <h4>Templates + AI setup</h4>
-              <p>Describe the engagement; TaskAt generates the checklist + approval steps.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- /Features Section -->
-
-    <!-- Social Proof Section -->
-    <section id="social-proof" class="social-proof section light-background">
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center" data-aos="fade-up">
-            <p class="micro-proof">Built with agency operators</p>
-            <p class="looking-for">Looking for 10 beta agencies</p>
-          </div>
-        </div>
-
-        <div class="row gy-4 mt-4 justify-content-center">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="quote-card">
-              <p>"We lost 6 hours/week to follow-ups."</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-            <div class="quote-card">
-              <p>"Clients never log into our PM tool."</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="quote-card">
-              <p>"Approvals were always unclear."</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- /Social Proof Section -->
-
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing section dark-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing that scales with clients, not seats.</h2>
-      </div>
+    <section id="pricing" class="pricing section light-background">
+      <div class="container">
+        <!-- Pricing Header -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h2>Pricing that scales with clients, not seats.</h2>
+            <p class="pricing-subhead">Pay based on how many clients you're actively chasing—TaskAt handles follow-ups, approvals, and uploads.</p>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
+            <!-- Billing Toggle -->
+            <div class="pricing-toggle" data-aos="fade-up" data-aos-delay="50">
+              <span class="toggle-label" id="monthly-label">Monthly</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="toggle-slider"></span>
+              </label>
+              <span class="toggle-label" id="yearly-label">Yearly <span class="save-badge">Save 10%</span></span>
+            </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <!-- Trust Row -->
+            <div class="pricing-trust-row" data-aos="fade-up" data-aos-delay="100">
+              <span><i class="bi bi-person-x"></i> No client logins</span>
+              <span><i class="bi bi-reply"></i> Reply-to threading</span>
+              <span><i class="bi bi-envelope"></i> Works from email</span>
+              <span><i class="bi bi-x-circle"></i> Cancel anytime</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="row gy-4 mt-4 justify-content-center">
+
+          <!-- Starter -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-card">
-              <h3>Starter</h3>
-              <p class="pricing-desc">Up to 10 active clients</p>
-              <div class="pricing-note">Beta pricing available for early access members</div>
+              <div class="pricing-header">
+                <h3>Starter</h3>
+                <div class="pricing-price">
+                  <span class="price monthly-price">$9</span>
+                  <span class="price yearly-price" style="display:none;">$100</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period yearly-period" style="display:none;">/year</span>
+                </div>
+              </div>
+              <div class="pricing-limits">
+                <p class="pricing-clients">Up to 10 active clients</p>
+                <p class="pricing-emails">200 emails to clients/month</p>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check2"></i> Unlimited inbound forwarding</li>
+                <li><i class="bi bi-check2"></i> Client portal + file uploads</li>
+                <li><i class="bi bi-check2"></i> AI follow-up drafts</li>
+                <li><i class="bi bi-check2"></i> Threading + reply routing</li>
+                <li><i class="bi bi-check2"></i> Basic reminders</li>
+              </ul>
+              <a href="https://platform.taskat.ai" class="btn-pricing">Get Early Access</a>
+              <p class="pricing-microcopy">Best for solo operators and small retainers.</p>
             </div>
           </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="250">
+          <!-- Pro -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="pricing-card featured">
-              <h3>Pro</h3>
-              <p class="pricing-desc">Up to 50 active clients + branding + custom reminders</p>
-              <div class="pricing-note">Beta pricing available for early access members</div>
+              <div class="pricing-badge">Most popular</div>
+              <div class="pricing-header">
+                <h3>Pro</h3>
+                <div class="pricing-price">
+                  <span class="price monthly-price">$29</span>
+                  <span class="price yearly-price" style="display:none;">$300</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period yearly-period" style="display:none;">/year</span>
+                </div>
+              </div>
+              <div class="pricing-limits">
+                <p class="pricing-clients">Up to 50 active clients</p>
+                <p class="pricing-emails">2,000 emails to clients/month</p>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check2"></i> Everything in Starter</li>
+                <li><i class="bi bi-check2"></i> Custom reminder schedules</li>
+                <li><i class="bi bi-check2"></i> Agency branding on portal</li>
+                <li><i class="bi bi-check2"></i> Bulk send + guardrails</li>
+                <li><i class="bi bi-check2"></i> Client health visibility</li>
+                <li><i class="bi bi-check2"></i> Weekly digest reports</li>
+              </ul>
+              <a href="https://platform.taskat.ai" class="btn-pricing-primary">Get Early Access</a>
+              <p class="pricing-microcopy">Best for agencies with retainers + approvals.</p>
             </div>
           </div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <!-- Studio -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="pricing-card">
-              <h3>Studio</h3>
-              <p class="pricing-desc">Unlimited clients + advanced features</p>
-              <div class="pricing-note">Beta pricing available for early access members</div>
+              <div class="pricing-label">For scale</div>
+              <div class="pricing-header">
+                <h3>Studio</h3>
+                <div class="pricing-price">
+                  <span class="price monthly-price">$79</span>
+                  <span class="price yearly-price" style="display:none;">$800</span>
+                  <span class="period monthly-period">/month</span>
+                  <span class="period yearly-period" style="display:none;">/year</span>
+                </div>
+              </div>
+              <div class="pricing-limits">
+                <p class="pricing-clients">Unlimited active clients</p>
+                <p class="pricing-emails">10,000 emails to clients/month</p>
+              </div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check2"></i> Everything in Pro</li>
+                <li><i class="bi bi-check2"></i> Multiple domains</li>
+                <li><i class="bi bi-check2"></i> Advanced reporting</li>
+                <li><i class="bi bi-check2"></i> Team workflows</li>
+                <li><i class="bi bi-check2"></i> Priority support</li>
+              </ul>
+              <a href="https://platform.taskat.ai" class="btn-pricing">Talk to Us</a>
+              <p class="pricing-microcopy">For busy studios with high client volume.</p>
             </div>
           </div>
 
         </div>
+
+        <!-- Limits Footnote -->
+        <div class="row mt-4">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="250">
+            <p class="pricing-footnote">Emails to clients = messages TaskAt sends to your clients. Forwarded inbound emails and client replies don't count.</p>
+          </div>
+        </div>
+
+        <!-- What Counts Section -->
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+            <div class="limits-explainer">
+              <h4>What counts toward limits?</h4>
+              <div class="limits-grid">
+                <div class="limits-col">
+                  <h5><i class="bi bi-check-circle"></i> Counts</h5>
+                  <ul>
+                    <li>Request sends to clients</li>
+                    <li>Follow-ups and nudges</li>
+                    <li>Clarification emails</li>
+                  </ul>
+                </div>
+                <div class="limits-col">
+                  <h5><i class="bi bi-x-circle"></i> Doesn't count</h5>
+                  <ul>
+                    <li>Forwarded emails inbound</li>
+                    <li>Client replies inbound</li>
+                    <li>Internal team messages</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="limits-note">You can always draft—sending pauses only when you hit the monthly email limit.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Included in All Plans -->
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="350">
+            <div class="included-all">
+              <h4>Included in all plans</h4>
+              <div class="included-items">
+                <span><i class="bi bi-people"></i> Unlimited seats</span>
+                <span><i class="bi bi-window"></i> Client portal</span>
+                <span><i class="bi bi-reply-all"></i> Reply threading</span>
+                <span><i class="bi bi-shield-lock"></i> TLS + secure storage</span>
+                <span><i class="bi bi-download"></i> Export anytime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section><!-- /Pricing Section -->
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq section light-background">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Do clients need accounts?</h3>
-                <div class="faq-content">
-                  <p>No, secure links from email.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>Does this replace Asana/ClickUp?</h3>
-                <div class="faq-content">
-                  <p>No — it complements them.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>What files can clients upload?</h3>
-                <div class="faq-content">
-                  <p>Anything you accept today.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-              <div class="faq-item">
-                <h3>Can I use it for retainers and projects?</h3>
-                <div class="faq-content">
-                  <p>Yes, templates for both.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section><!-- /FAQ Section -->
 
     <!-- Waitlist/CTA Section -->
     <section id="waitlist" class="waitlist section dark-background">
@@ -706,6 +782,7 @@
   <!-- Starter Kits Toggle Script -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Starter Kits Toggle
       const toggleButtons = document.querySelectorAll('.btn-toggle');
       const panels = document.querySelectorAll('.starter-panel');
 
@@ -722,6 +799,40 @@
           document.getElementById(target + '-panel').classList.add('active');
         });
       });
+
+      // Pricing Billing Toggle
+      const billingToggle = document.getElementById('billing-toggle');
+      const monthlyLabel = document.getElementById('monthly-label');
+      const yearlyLabel = document.getElementById('yearly-label');
+      const monthlyPrices = document.querySelectorAll('.monthly-price');
+      const yearlyPrices = document.querySelectorAll('.yearly-price');
+      const monthlyPeriods = document.querySelectorAll('.monthly-period');
+      const yearlyPeriods = document.querySelectorAll('.yearly-period');
+
+      // Set initial state
+      monthlyLabel.classList.add('active');
+
+      if (billingToggle) {
+        billingToggle.addEventListener('change', function() {
+          if (this.checked) {
+            // Yearly
+            monthlyLabel.classList.remove('active');
+            yearlyLabel.classList.add('active');
+            monthlyPrices.forEach(el => el.style.display = 'none');
+            yearlyPrices.forEach(el => el.style.display = 'inline');
+            monthlyPeriods.forEach(el => el.style.display = 'none');
+            yearlyPeriods.forEach(el => el.style.display = 'inline');
+          } else {
+            // Monthly
+            monthlyLabel.classList.add('active');
+            yearlyLabel.classList.remove('active');
+            monthlyPrices.forEach(el => el.style.display = 'inline');
+            yearlyPrices.forEach(el => el.style.display = 'none');
+            monthlyPeriods.forEach(el => el.style.display = 'inline');
+            yearlyPeriods.forEach(el => el.style.display = 'none');
+          }
+        });
+      }
     });
   </script>
 
