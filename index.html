@@ -30,6 +30,13 @@
 
 <body class="index-page">
 
+  <!-- Pilot Banner -->
+  <div class="pilot-banner">
+    <div class="container">
+      <p><i class="bi bi-rocket-takeoff"></i> <strong>Free guided pilot</strong> (non-EU/UK for now) — set up in 20 minutes. <a href="#waitlist">Apply now <i class="bi bi-arrow-right"></i></a></p>
+    </div>
+  </div>
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
@@ -43,12 +50,11 @@
           <li><a href="use-cases.html">Use Cases</a></li>
           <li><a href="marketing-agencies.html">For Agencies</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://platform.taskat.ai">Get Early Access</a>
+      <a class="btn-getstarted" href="#waitlist">Start Free Pilot</a>
 
     </div>
   </header>
@@ -81,7 +87,7 @@
               <p class="hero-description">Turn client emails into trackable requests (upload / approve / answer). TaskAt drafts follow-ups and shows exactly what's blocking delivery.</p>
               <p class="hero-outcome">Know what's waiting. Send follow-ups in one click. Get it done.</p>
               <div class="hero-actions">
-                <a href="https://platform.taskat.ai" class="btn-primary">Get early access</a>
+                <a href="#waitlist" class="btn-primary">Start free pilot</a>
                 <a href="https://platform.taskat.ai" class="btn-secondary">
                   <i class="bi bi-play-circle"></i>
                   <span>See the demo</span>
@@ -312,7 +318,7 @@
 
         <!-- CTA under cards -->
         <div class="how-it-works-cta" data-aos="fade-up" data-aos-delay="400">
-          <a href="https://platform.taskat.ai" class="btn-primary">Get early access</a>
+          <a href="#waitlist" class="btn-primary">Start free pilot</a>
           <a href="https://platform.taskat.ai" class="btn-secondary">
             <i class="bi bi-play-circle"></i>
             <span>See a real example</span>
@@ -336,7 +342,7 @@
               <li><i class="bi bi-check2"></i> Clear audit trail for every request</li>
             </ul>
             <div class="blockers-intro-cta">
-              <a href="https://platform.taskat.ai" class="btn-primary">Get early access</a>
+              <a href="#waitlist" class="btn-primary">Start free pilot</a>
               <a href="use-cases.html" class="link-browse">Browse all use cases <i class="bi bi-arrow-right"></i></a>
             </div>
             <p class="blockers-proof"><i class="bi bi-shield-check"></i> Forward-only. You control sending. Attachments encrypted.</p>
@@ -518,7 +524,8 @@
         <!-- Pricing Header -->
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center" data-aos="fade-up">
-            <h2>Pricing that scales with clients, not seats.</h2>
+            <h2>Post-pilot pricing</h2>
+            <p class="pricing-pilot-note">Start with a free 30-day pilot. These plans apply after.</p>
             <p class="pricing-subhead">Pay based on how many clients you're actively chasing—TaskAt handles follow-ups, approvals, and uploads.</p>
 
             <!-- Billing Toggle -->
@@ -567,7 +574,7 @@
                 <li><i class="bi bi-check2"></i> Threading + reply routing</li>
                 <li><i class="bi bi-check2"></i> Basic reminders</li>
               </ul>
-              <a href="https://platform.taskat.ai" class="btn-pricing">Get Early Access</a>
+              <a href="#waitlist" class="btn-pricing">Start free pilot</a>
               <p class="pricing-microcopy">Best for solo operators and small retainers.</p>
             </div>
           </div>
@@ -597,7 +604,7 @@
                 <li><i class="bi bi-check2"></i> Client health visibility</li>
                 <li><i class="bi bi-check2"></i> Weekly digest reports</li>
               </ul>
-              <a href="https://platform.taskat.ai" class="btn-pricing-primary">Get Early Access</a>
+              <a href="#waitlist" class="btn-pricing-primary">Start free pilot</a>
               <p class="pricing-microcopy">Best for agencies with retainers + approvals.</p>
             </div>
           </div>
@@ -687,48 +694,100 @@
       </div>
     </section><!-- /Pricing Section -->
 
-    <!-- Waitlist/CTA Section -->
-    <section id="waitlist" class="waitlist section dark-background">
+    <!-- Pilot Application Section -->
+    <section id="waitlist" class="pilot-application section dark-background">
       <div class="container" data-aos="fade-up">
 
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2>Want us to set up your first client flow?</h2>
-            <p class="setup-note">We'll configure your kickoff + approvals template for one client.</p>
+            <h2>Start your free 30-day pilot</h2>
+            <p class="pilot-subtitle">Guided setup in 20 minutes. Forward real client emails. See what's blocking delivery.</p>
           </div>
         </div>
 
         <div class="row justify-content-center mt-4">
           <div class="col-lg-6">
-            <form action="forms/waitlist.php" method="post" class="waitlist-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/pilot.php" method="post" class="pilot-form" data-aos="fade-up" data-aos-delay="200">
 
               <div class="mb-4">
-                <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                <input type="email" name="email" class="form-control" placeholder="you@agency.com" required>
+                <span class="form-helper">We'll send setup instructions here.</span>
               </div>
 
               <div class="mb-4">
-                <select name="business_type" class="form-select" required>
-                  <option value="">I run...</option>
-                  <option value="marketing">Marketing retainer</option>
-                  <option value="design">Design projects</option>
-                  <option value="consulting">Consulting</option>
+                <select name="agency_type" class="form-select" required>
+                  <option value="">Agency type</option>
+                  <option value="web-design">Web/Design</option>
+                  <option value="video-content">Video/Content</option>
+                  <option value="marketing-retainers">Marketing/Retainers</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
 
               <div class="mb-4">
-                <select name="client_count" class="form-select">
-                  <option value="">Number of active clients (optional)</option>
-                  <option value="1-10">1–10</option>
-                  <option value="11-30">11–30</option>
-                  <option value="31-100">31–100</option>
-                  <option value="100+">100+</option>
+                <select name="team_size" class="form-select" required>
+                  <option value="">Team size</option>
+                  <option value="1-2">1–2</option>
+                  <option value="3-5">3–5</option>
+                  <option value="6-10">6–10</option>
+                  <option value="11-25">11–25</option>
+                  <option value="26+">26+</option>
                 </select>
+              </div>
+
+              <div class="mb-4">
+                <select name="active_clients" class="form-select" required>
+                  <option value="">How many active clients do you manage?</option>
+                  <option value="1-5">1–5</option>
+                  <option value="6-15">6–15</option>
+                  <option value="16-30">16–30</option>
+                  <option value="31-60">31–60</option>
+                  <option value="60+">60+</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label">What blocks delivery most often?</label>
+                <div class="blocker-checkboxes">
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="blockers[]" value="missing-assets">
+                    <span>Missing assets</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="blockers[]" value="waiting-approval">
+                    <span>Waiting on approval</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="blockers[]" value="waiting-answers">
+                    <span>Waiting on answers</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="blockers[]" value="feedback-loops">
+                    <span>Feedback loops</span>
+                  </label>
+                  <label class="checkbox-item">
+                    <input type="checkbox" name="blockers[]" value="other">
+                    <span>Other</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <textarea name="chasing_example" class="form-control" rows="3" placeholder="Optional: Paste a recent 'chasing' example"></textarea>
+                <span class="form-helper">A few lines is enough. No sensitive info needed.</span>
+              </div>
+
+              <div class="mb-4">
+                <label class="checkbox-item consent-checkbox">
+                  <input type="checkbox" name="non_eu_uk" required>
+                  <span>I confirm I'm outside the EU/UK for this pilot.</span>
+                </label>
               </div>
 
               <div class="text-center">
                 <div class="cta-buttons">
-                  <button type="submit" class="btn btn-cta-primary">Join the waitlist</button>
-                  <a href="https://platform.taskat.ai" class="btn btn-cta-secondary">Book a 15-minute setup call</a>
+                  <button type="submit" class="btn btn-cta-primary">Start my pilot</button>
+                  <a href="https://platform.taskat.ai" class="btn btn-cta-secondary">Book setup call</a>
                 </div>
               </div>
 
@@ -737,7 +796,7 @@
         </div>
 
       </div>
-    </section><!-- /Waitlist Section -->
+    </section><!-- /Pilot Application Section -->
 
   </main>
 
