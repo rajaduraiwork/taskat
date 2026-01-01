@@ -40,16 +40,15 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#starter-kits">Starter Kits</a></li>
-          <li><a href="#features">Features</a></li>
+          <li><a href="use-cases.html">Use Cases</a></li>
+          <li><a href="marketing-agencies.html">For Agencies</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#waitlist">Get Early Access</a>
+      <a class="btn-getstarted" href="https://platform.taskat.ai">Get Early Access</a>
 
     </div>
   </header>
@@ -58,22 +57,43 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
+      <!-- Floating Background Symbols -->
+      <div class="floating-symbols">
+        <i class="bi bi-envelope floating-icon icon-1"></i>
+        <i class="bi bi-check-circle floating-icon icon-2"></i>
+        <i class="bi bi-clipboard-check floating-icon icon-3"></i>
+        <i class="bi bi-send floating-icon icon-4"></i>
+        <i class="bi bi-file-earmark-check floating-icon icon-5"></i>
+        <i class="bi bi-bell floating-icon icon-6"></i>
+        <i class="bi bi-calendar-check floating-icon icon-7"></i>
+        <i class="bi bi-inbox floating-icon icon-8"></i>
+        <i class="bi bi-check2-square floating-icon icon-9"></i>
+        <i class="bi bi-envelope-check floating-icon icon-10"></i>
+        <i class="bi bi-clock floating-icon icon-11"></i>
+        <i class="bi bi-person-check floating-icon icon-12"></i>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
+        <div class="row align-items-start">
 
           <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <div class="hero-content">
               <h1 class="hero-title">Stop chasing clients for approvals and assets.</h1>
-              <p class="hero-description">Send one-click requests from email (upload / answer / approve). TaskAt auto-follows up until it's done and shows what's blocking delivery.</p>
+              <p class="hero-description">Turn client emails into trackable requests (upload / approve / answer). TaskAt drafts follow-ups and shows exactly what's blocking delivery.</p>
+              <p class="hero-outcome">Know what's waiting. Send follow-ups in one click. Get it done.</p>
               <div class="hero-actions">
-                <a href="#waitlist" class="btn-primary">Get early access</a>
-                <a href="#demo" class="btn-secondary">
+                <a href="https://platform.taskat.ai" class="btn-primary">Get early access</a>
+                <a href="https://platform.taskat.ai" class="btn-secondary">
                   <i class="bi bi-play-circle"></i>
-                  <span>See the 60-second demo</span>
+                  <span>See the demo</span>
                 </a>
               </div>
               <div class="hero-trust">
-                <p class="trust-text">No client training. No switching your project tool.</p>
+                <p class="trust-text"><i class="bi bi-shield-check"></i> Email-safe by design — we only process what you forward. You review before sending.</p>
+              </div>
+              <div class="hero-security">
+                <span class="security-badge"><i class="bi bi-lock"></i> TLS encrypted</span>
+                <span class="security-badge"><i class="bi bi-cloud-check"></i> Secure storage</span>
+                <span class="security-badge"><i class="bi bi-person-check"></i> No client training</span>
               </div>
             </div>
           </div>
@@ -81,10 +101,21 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="300">
             <div class="hero-visual">
               <div class="email-request-card">
+                <div class="card-top-bar">
+                  <span class="app-label">TaskAt</span>
+                  <span class="card-type-pill">Request</span>
+                </div>
                 <div class="card-header">
                   <span class="from-label">From: you@agency.com</span>
                   <h3>Approve Q1 Content Calendar</h3>
                   <p>Review and approve the proposed content calendar for January-March.</p>
+                </div>
+                <div class="card-meta">
+                  <span class="meta-item"><i class="bi bi-building"></i> Acme Corp</span>
+                  <span class="meta-divider">•</span>
+                  <span class="meta-item"><i class="bi bi-clock"></i> Sent 2d ago</span>
+                  <span class="meta-divider">•</span>
+                  <span class="meta-item"><i class="bi bi-bell"></i> 2 reminders</span>
                 </div>
                 <div class="card-actions">
                   <button class="btn-approve">Approve</button>
@@ -94,15 +125,24 @@
               <div class="dashboard-snippet">
                 <div class="dashboard-header">Waiting on client</div>
                 <div class="client-row">
-                  <span class="client-name">Acme Corp</span>
+                  <div class="client-info">
+                    <span class="client-name">Acme Corp</span>
+                    <span class="client-timestamp">Last touched 6h ago</span>
+                  </div>
                   <span class="status-badge blocked">Blocked 4 days</span>
                 </div>
                 <div class="client-row">
-                  <span class="client-name">TechStart Inc</span>
+                  <div class="client-info">
+                    <span class="client-name">TechStart Inc</span>
+                    <span class="client-timestamp">Last touched 2d ago</span>
+                  </div>
                   <span class="status-badge overdue">Overdue 2 days</span>
                 </div>
                 <div class="client-row">
-                  <span class="client-name">BrandCo</span>
+                  <div class="client-info">
+                    <span class="client-name">BrandCo</span>
+                    <span class="client-timestamp">Last touched 12h ago</span>
+                  </div>
                   <span class="status-badge waiting">Waiting 1 day</span>
                 </div>
               </div>
@@ -214,6 +254,75 @@
         </div>
       </div>
     </section><!-- /How It Works Section -->
+
+    <!-- Common Client Blockers Section -->
+    <section id="blockers" class="blockers section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Common client blockers TaskAt handles</h2>
+        <p>Turn emails into trackable requests, send nudges, and collect uploads—without clients logging in.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <a href="use-cases.html#uploads" class="blocker-tile">
+              <div class="blocker-icon">
+                <i class="bi bi-cloud-upload"></i>
+              </div>
+              <h3>Collect assets & files</h3>
+              <p>Logos, brand kits, W-9/COI, copy docs—all in one organized place.</p>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <a href="use-cases.html#approvals" class="blocker-tile">
+              <div class="blocker-icon">
+                <i class="bi bi-check2-circle"></i>
+              </div>
+              <h3>Get approvals fast</h3>
+              <p>Ad copy, designs, budgets, scope changes—clear yes/no with timestamps.</p>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <a href="use-cases.html#answers" class="blocker-tile">
+              <div class="blocker-icon">
+                <i class="bi bi-chat-left-text"></i>
+              </div>
+              <h3>Chase missing answers</h3>
+              <p>Quick questions that stall delivery—tracked until resolved.</p>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <a href="use-cases.html#access" class="blocker-tile">
+              <div class="blocker-icon">
+                <i class="bi bi-key"></i>
+              </div>
+              <h3>Confirm access & credentials</h3>
+              <p>GA4, Ads, Meta BM, Shopify invites—request and confirm securely.</p>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <a href="use-cases.html#clarify" class="blocker-tile">
+              <div class="blocker-icon">
+                <i class="bi bi-question-circle"></i>
+              </div>
+              <h3>Handle ambiguous replies</h3>
+              <p>"Ok" / "soon" / "maybe" → auto-clarify with smart follow-ups.</p>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="350">
+          <a href="use-cases.html" class="btn-browse-usecases">Browse all use cases <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </section><!-- /Common Client Blockers Section -->
 
     <!-- Starter Kits Section -->
     <section id="starter-kits" class="starter-kits section light-background">
@@ -543,7 +652,7 @@
               <div class="text-center">
                 <div class="cta-buttons">
                   <button type="submit" class="btn btn-cta-primary">Join the waitlist</button>
-                  <a href="#demo" class="btn btn-cta-secondary">Book a 15-minute setup call</a>
+                  <a href="https://platform.taskat.ai" class="btn btn-cta-secondary">Book a 15-minute setup call</a>
                 </div>
               </div>
 
