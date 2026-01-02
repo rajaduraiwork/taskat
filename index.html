@@ -54,7 +54,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://platform.taskat.ai/sign-up">Start Free Pilot</a>
+      <a class="btn-getstarted" href="https://platform.taskat.ai/auth/sign-up">Start Free Pilot</a>
 
     </div>
   </header>
@@ -87,7 +87,7 @@
               <p class="hero-description">Turn client emails into trackable requests (upload / approve / answer). TaskAt drafts follow-ups and shows exactly what's blocking delivery.</p>
               <p class="hero-outcome">Know what's waiting. Send follow-ups in one click. Get it done.</p>
               <div class="hero-actions">
-                <a href="https://platform.taskat.ai/sign-up" class="btn-primary">Start free pilot</a>
+                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free pilot</a>
                 <a href="https://platform.taskat.ai/demo" class="btn-secondary">
                   <i class="bi bi-play-circle"></i>
                   <span>See the demo</span>
@@ -318,7 +318,7 @@
 
         <!-- CTA under cards -->
         <div class="how-it-works-cta" data-aos="fade-up" data-aos-delay="400">
-          <a href="https://platform.taskat.ai/sign-up" class="btn-primary">Start free pilot</a>
+          <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free pilot</a>
           <a href="https://platform.taskat.ai/demo" class="btn-secondary">
             <i class="bi bi-play-circle"></i>
             <span>See a real example</span>
@@ -342,7 +342,7 @@
               <li><i class="bi bi-check2"></i> Clear audit trail for every request</li>
             </ul>
             <div class="blockers-intro-cta">
-              <a href="https://platform.taskat.ai/sign-up" class="btn-primary">Start free pilot</a>
+              <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free pilot</a>
               <a href="use-cases.html" class="link-browse">Browse all use cases <i class="bi bi-arrow-right"></i></a>
             </div>
             <p class="blockers-proof"><i class="bi bi-shield-check"></i> Forward-only. You control sending. Attachments encrypted.</p>
@@ -544,7 +544,7 @@
                     <span class="price">$0</span>
                     <span class="period">for 30 days</span>
                   </div>
-                  <a href="https://platform.taskat.ai/sign-up" class="btn-pilot-cta">Start free pilot</a>
+                  <a href="https://platform.taskat.ai/auth/sign-up" class="btn-pilot-cta">Start free pilot</a>
                   <p class="pilot-pricing-availability">Non-EU/UK only for now</p>
                 </div>
               </div>
@@ -596,7 +596,7 @@
                 <li><i class="bi bi-check2"></i> Reply threading</li>
                 <li><i class="bi bi-check2"></i> Basic reminders</li>
               </ul>
-              <a href="https://platform.taskat.ai/sign-up" class="btn-pricing">Start free pilot</a>
+              <a href="https://platform.taskat.ai/auth/sign-up" class="btn-pricing">Start free pilot</a>
               <p class="pricing-microcopy">For solo operators.</p>
             </div>
           </div>
@@ -625,7 +625,7 @@
                 <li><i class="bi bi-check2"></i> Client health dashboard</li>
                 <li><i class="bi bi-check2"></i> Weekly digest reports</li>
               </ul>
-              <a href="https://platform.taskat.ai/sign-up" class="btn-pricing-primary">Start free pilot</a>
+              <a href="https://platform.taskat.ai/auth/sign-up" class="btn-pricing-primary">Start free pilot</a>
               <p class="pricing-microcopy">For growing agencies.</p>
             </div>
           </div>
@@ -653,7 +653,7 @@
                 <li><i class="bi bi-check2"></i> Team workflows</li>
                 <li><i class="bi bi-check2"></i> Priority support</li>
               </ul>
-              <a href="https://platform.taskat.ai/sign-up" class="btn-pricing">Start free pilot</a>
+              <a href="https://platform.taskat.ai/auth/sign-up" class="btn-pricing">Start free pilot</a>
               <p class="pricing-microcopy">For busy studios.</p>
             </div>
           </div>
@@ -860,7 +860,7 @@
             }
 
             // Redirect to signup page with email pre-filled
-            const signupUrl = new URL('https://platform.taskat.ai/sign-up');
+            const signupUrl = new URL('https://platform.taskat.ai/auth/sign-up');
             signupUrl.searchParams.set('email', email);
             signupUrl.searchParams.set('source', 'pilot');
             window.location.href = signupUrl.toString();
@@ -868,7 +868,7 @@
           } catch (err) {
             console.error('Error:', err);
             // Still redirect on error - don't block user
-            window.location.href = 'https://platform.taskat.ai/sign-up?email=' + encodeURIComponent(email);
+            window.location.href = 'https://platform.taskat.ai/auth/sign-up?email=' + encodeURIComponent(email);
           }
         });
       }
