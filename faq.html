@@ -79,7 +79,7 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>What is TaskAt? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>TaskAt is an email-first client request and approval system. You forward a client email to TaskAt, it parses the thread and turns it into a trackable request (Upload, Approve, or Answer). Your client receives an email with a clear action link, completes the task, and you see the result in your dashboard. No portals. No passwords for clients.</p>
+                  <p>TaskAt is an email-first client request and approval system. You forward a client email to TaskAt, it parses the thread and turns it into a trackable request. TaskAt supports 8 request types: Upload (files/documents), Approve (sign-offs), Answer (questions), Confirm (yes/no), Schedule (meeting times), Review (feedback), Checklist (multi-item tasks), and Rating (satisfaction). Your client receives an email with a clear action link, completes the task, and you see the result in your dashboard. No portals. No passwords for clients.</p>
                 </div>
               </div>
 
@@ -125,10 +125,13 @@
                 <h5>What safety controls does Assist+ have? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
                   <p><strong>Type-based rules:</strong> Upload + Answer can auto-send. Approvals never auto-send.<br>
-                  <strong>Confidence threshold:</strong> Only sends when AI confidence is high.<br>
-                  <strong>Workspace toggle:</strong> Enable/disable per workspace.<br>
-                  <strong>Audit log:</strong> Every auto-send is logged with reasoning.<br>
-                  <strong>Fallback:</strong> If unsure, it drafts and waits for your review.</p>
+                  <strong>Confidence threshold:</strong> Default 0.85 — only sends when AI is highly confident.<br>
+                  <strong>Trust seeding:</strong> Requires at least one manual request to a contact before auto-send.<br>
+                  <strong>Business hours:</strong> Respects configurable send windows.<br>
+                  <strong>Daily caps &amp; cooldowns:</strong> Prevents client email fatigue.<br>
+                  <strong>Blocked domains/contacts:</strong> Exclude specific recipients.<br>
+                  <strong>Audit log:</strong> Every decision logged in automation_runs table with reasoning.<br>
+                  <strong>Fallback:</strong> If unsure, creates draft (DRAFT_ONLY) for your review.</p>
                 </div>
               </div>
 
@@ -175,9 +178,27 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>What types of requests can TaskAt handle? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p><strong>Upload:</strong> Request files, assets, or documents.<br>
+                  <p><strong>Upload:</strong> Request files, assets, or documents (tax docs, contracts, logos).<br>
                   <strong>Approve:</strong> Get sign-off on deliverables, designs, or decisions.<br>
-                  <strong>Answer:</strong> Ask questions that need a response.</p>
+                  <strong>Answer:</strong> Ask questions that need a response.<br>
+                  <strong>Confirm:</strong> Simple yes/no acknowledgements.<br>
+                  <strong>Schedule:</strong> Request meeting times or availability.<br>
+                  <strong>Review:</strong> Collect feedback on documents or deliverables.<br>
+                  <strong>Checklist:</strong> Multi-item task lists (great for onboarding).<br>
+                  <strong>Rating:</strong> Star ratings for satisfaction surveys.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>What are the request status states? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>Requests flow through these canonical statuses:<br>
+                  <strong>draft</strong> — Created but not sent yet<br>
+                  <strong>waiting</strong> — Sent, waiting on client response<br>
+                  <strong>in_review</strong> — Client responded, needs your review<br>
+                  <strong>completed</strong> — Resolved/finished<br>
+                  <strong>paused</strong> — Temporarily paused (no nudges sent)<br>
+                  <strong>cancelled</strong> — Intentionally stopped</p>
                 </div>
               </div>
 
@@ -195,6 +216,78 @@
                 </div>
               </div>
 
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>What's the difference between Confirm and Approve? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p><strong>Confirm:</strong> Simple yes/no acknowledgement—no changes possible. Use for receipts, policy acknowledgements, or "got it" confirmations.<br>
+                  <strong>Approve:</strong> Decision with options—approve or request changes with notes. Use for deliverables, budgets, or anything requiring feedback.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>How do Schedule requests work? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>You send a request asking for availability. The client sees a simple interface to select from time slots you've offered or propose alternatives. Once they respond, you're notified and can confirm the meeting.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>How do Checklist requests work? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>You create a list of items the client needs to complete. They see each item with a checkbox and can mark them done one by one. You see real-time progress and get notified when everything is complete. Great for onboarding or pre-launch requirements.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>How do Rating requests work? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>Clients see a star rating (1-5) with optional comment field. Simple and quick to complete. Use for project satisfaction, monthly check-ins, or NPS-style feedback. Results appear in your dashboard for tracking trends.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- AI & Automation -->
+            <div class="faq-category" data-aos="fade-up" data-aos-delay="225">
+              <h3 class="faq-category-title"><i class="bi bi-cpu"></i> AI & Automation</h3>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>What AI agents power TaskAt? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>TaskAt uses four Claude-powered AI agents:<br>
+                  <strong>1. Thread Extraction Agent:</strong> Analyzes forwarded emails and identifies actionable requests with confidence scores.<br>
+                  <strong>2. Autopilot Engine (Assist+):</strong> Decides whether to auto-send, create a draft, or block based on policy rules.<br>
+                  <strong>3. Reply Classification Agent:</strong> Interprets client replies as approved, rejected, or ambiguous.<br>
+                  <strong>4. Nudge Generation Agent:</strong> Creates contextual follow-up emails with appropriate tone escalation.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>What happens when AI confidence is low? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>When the Thread Extraction Agent's confidence score falls below your threshold (default 0.85), the request is created as a draft (DRAFT_ONLY) for your review. You can edit, adjust the request type, or discard it entirely. Low confidence never results in an auto-send.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>Can I see why the AI made a decision? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>Yes. Every AI decision is logged in the <code>ai_decision_logs</code> table with full input/output data. For Assist+ automation, each run is logged in <code>automation_runs</code> with the specific reason (AUTO_SEND, DRAFT_ONLY, or BLOCKED) and which policy rule triggered it.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h5>Can I tell if a request was created by AI or a person? <i class="bi bi-chevron-down"></i></h5>
+                <div class="faq-answer">
+                  <p>Yes. Every request tracks attribution:<br>
+                  <strong>created_by: USER</strong> — Created manually by an agency person<br>
+                  <strong>created_by: AI</strong> — Extracted by the Thread Extraction Agent<br>
+                  <strong>send_mode: MANUAL</strong> — Person clicked send<br>
+                  <strong>send_mode: AUTOPILOT</strong> — Assist+ auto-sent the request<br>
+                  This helps with auditing and understanding your workflow patterns.</p>
+                </div>
+              </div>
+
             </div>
 
             <!-- Security & Privacy -->
@@ -204,7 +297,7 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>Is TaskAt secure? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>Yes. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). We don't sell or share your data. Files are stored securely and can be exported anytime. We're working toward SOC 2 compliance.</p>
+                  <p>Yes. Defense-in-depth security: All data encrypted in transit (TLS 1.3) and at rest (AES-256). Files are virus-scanned with ClamAV before storage. Portal tokens are bcrypt-hashed (never stored plaintext). Rate limiting: 100 req/15min (public), 20 req/hour (tokens). MIME validation on uploads. IP hashing for GDPR compliance. We don't sell or share your data. SOC 2 compliance in progress.</p>
                 </div>
               </div>
 
@@ -229,9 +322,9 @@
               <h3 class="faq-category-title"><i class="bi bi-credit-card"></i> Pricing & Pilot</h3>
 
               <div class="faq-item" onclick="this.classList.toggle('open')">
-                <h5>What's included in the 30-day free pilot? <i class="bi bi-chevron-down"></i></h5>
+                <h5>What's included in the 14-day free pilot? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>Full access to all features. We help you set up, migrate existing threads if needed, and check in weekly. At the end, you choose to upgrade or stay in view-only mode (no sending, but you keep access to everything).</p>
+                  <p>Full access to all features with pilot limits: 50 requests sent, 10 active clients, 100 AI analyses, and 100MB storage. We help you set up, migrate existing threads if needed, and check in weekly. At the end, you choose to upgrade or stay in view-only mode (no sending, but you keep access to everything).</p>
                 </div>
               </div>
 
@@ -252,7 +345,7 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>What happens after my pilot ends? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>After 30 days, sending pauses but you keep full access to view your dashboard, client history, and all uploaded files. Upgrade anytime to resume sending.</p>
+                  <p>After 14 days (or when limits are reached), sending pauses but you keep full access to view your dashboard, client history, and all uploaded files. Upgrade anytime to resume sending.</p>
                 </div>
               </div>
 

@@ -4645,6 +4645,36 @@ section,
   border-color: rgba(139, 92, 246, 0.3);
 }
 
+.step-chips .chip.confirm {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818CF8;
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.step-chips .chip.schedule {
+  background: rgba(6, 182, 212, 0.15);
+  color: #22D3EE;
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.step-chips .chip.review {
+  background: rgba(249, 115, 22, 0.15);
+  color: #FB923C;
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.step-chips .chip.checklist {
+  background: rgba(132, 204, 22, 0.15);
+  color: #A3E635;
+  border-color: rgba(132, 204, 22, 0.3);
+}
+
+.step-chips .chip.rating {
+  background: rgba(234, 179, 8, 0.15);
+  color: #FACC15;
+  border-color: rgba(234, 179, 8, 0.3);
+}
+
 .step-chips .chip.feature {
   background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.9);
@@ -5833,6 +5863,46 @@ section,
   color: #0d9488;
 }
 
+.use-case-tags .tag.confirm {
+  background: rgba(99, 102, 241, 0.1);
+  color: #4f46e5;
+}
+
+.use-case-tags .tag.schedule {
+  background: rgba(6, 182, 212, 0.1);
+  color: #0891b2;
+}
+
+.use-case-tags .tag.review {
+  background: rgba(249, 115, 22, 0.1);
+  color: #ea580c;
+}
+
+.use-case-tags .tag.checklist {
+  background: rgba(132, 204, 22, 0.1);
+  color: #65a30d;
+}
+
+.use-case-tags .tag.rating {
+  background: rgba(234, 179, 8, 0.1);
+  color: #ca8a04;
+}
+
+.use-case-tags .tag.legal {
+  background: rgba(71, 85, 105, 0.1);
+  color: #475569;
+}
+
+.use-case-tags .tag.accounting {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+}
+
+.use-case-tags .tag.hr {
+  background: rgba(168, 85, 247, 0.1);
+  color: #9333ea;
+}
+
 .use-case-item h3 {
   font-size: 18px;
   font-weight: 600;
@@ -6266,6 +6336,31 @@ section,
 .template-type.access {
   background: rgba(139, 92, 246, 0.15);
   color: #A78BFA;
+}
+
+.template-type.confirm {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818CF8;
+}
+
+.template-type.schedule {
+  background: rgba(6, 182, 212, 0.15);
+  color: #22D3EE;
+}
+
+.template-type.review {
+  background: rgba(249, 115, 22, 0.15);
+  color: #FB923C;
+}
+
+.template-type.checklist {
+  background: rgba(132, 204, 22, 0.15);
+  color: #A3E635;
+}
+
+.template-type.rating {
+  background: rgba(234, 179, 8, 0.15);
+  color: #FACC15;
 }
 
 .template-card h4 {
@@ -7434,6 +7529,117 @@ body.index-page .hero {
 
   .assist-plus-features li {
     font-size: 14px;
+  }
+}
+
+/*--------------------------------------------------------------
+# AI Agents Section
+--------------------------------------------------------------*/
+.ai-agents {
+  padding: 80px 0;
+}
+
+.ai-agents .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.ai-agents .section-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.ai-agent-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.ai-agent-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(45, 212, 191, 0.3);
+  transform: translateY(-4px);
+}
+
+.agent-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  background: linear-gradient(135deg, var(--accent-color) 0%, #0d9488 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agent-icon i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.agent-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.agent-content p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.agent-trigger {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--accent-color);
+  background: rgba(45, 212, 191, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.ai-agents-note {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.ai-agents-note i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+.ai-agents-note code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .ai-agent-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .agent-icon {
+    margin: 0 auto;
+  }
+
+  .ai-agents .section-title h2 {
+    font-size: 28px;
   }
 }
 

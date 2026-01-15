@@ -84,9 +84,9 @@
           <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <div class="hero-content">
               <h1 class="hero-title">Stop chasing clients for approvals and assets.</h1>
-              <p class="hero-description">Forward client emails → TaskAt turns them into trackable requests (Upload / Approve / Answer), nudges automatically, and shows what's blocking delivery.</p>
+              <p class="hero-description">Forward client emails → TaskAt turns them into trackable requests (Upload / Approve / Answer / Confirm / Schedule / Review / Checklist / Rating), nudges automatically, and shows what's blocking delivery.</p>
               <div class="hero-actions">
-                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free 30-day pilot</a>
+                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free 14-day pilot</a>
                 <a href="https://platform.taskat.ai/demo" class="btn-secondary">
                   <i class="bi bi-play-circle"></i>
                   <span>See the demo</span>
@@ -97,8 +97,9 @@
               </div>
               <div class="hero-security">
                 <span class="security-badge"><i class="bi bi-lock"></i> TLS encrypted</span>
-                <span class="security-badge"><i class="bi bi-cloud-check"></i> Secure storage</span>
-                <span class="security-badge"><i class="bi bi-person-check"></i> No client training</span>
+                <span class="security-badge"><i class="bi bi-cloud-check"></i> AES-256 storage</span>
+                <span class="security-badge"><i class="bi bi-shield-check"></i> Virus scanned</span>
+                <span class="security-badge"><i class="bi bi-person-check"></i> No client login</span>
               </div>
             </div>
           </div>
@@ -268,11 +269,16 @@
               <div class="step-icon">
                 <i class="bi bi-envelope-arrow-up"></i>
               </div>
-              <p>Forward a client email. TaskAt pulls out what you need: upload, approve, or answer.</p>
+              <p>Forward a client email. TaskAt pulls out what you need from 8 request types.</p>
               <div class="step-chips">
                 <span class="chip upload">Upload</span>
                 <span class="chip approve">Approve</span>
                 <span class="chip answer">Answer</span>
+                <span class="chip confirm">Confirm</span>
+                <span class="chip schedule">Schedule</span>
+                <span class="chip review">Review</span>
+                <span class="chip checklist">Checklist</span>
+                <span class="chip rating">Rating</span>
               </div>
             </div>
           </div>
@@ -334,13 +340,14 @@
             <div class="assist-plus-content">
               <span class="assist-plus-badge">Beta</span>
               <h2>Meet AI Operator — Assist+</h2>
-              <p class="assist-plus-tagline">AI drafts every request. Assist+ automatically sends only safe ones.</p>
+              <p class="assist-plus-tagline">Two-level AI automation: Level 1 auto-drafts, Level 2 auto-sends with guardrails.</p>
               <ul class="assist-plus-features">
                 <li><i class="bi bi-check-circle-fill"></i> <strong>Auto-sends Upload + Answer only</strong> — Approvals always require human review</li>
+                <li><i class="bi bi-sliders"></i> <strong>Confidence threshold: 0.85</strong> — Only sends when AI is highly confident</li>
                 <li><i class="bi bi-clock-fill"></i> <strong>Respects business hours, cooldowns, caps</strong> — No spamming your clients</li>
-                <li><i class="bi bi-person-check-fill"></i> <strong>Trust seeding</strong> — Only after a manual request to that contact</li>
+                <li><i class="bi bi-person-check-fill"></i> <strong>Trust seeding required</strong> — At least one manual request before auto-send</li>
                 <li><i class="bi bi-shield-exclamation"></i> <strong>Emergency kill switch</strong> — Pause all auto-sends instantly</li>
-                <li><i class="bi bi-file-text-fill"></i> <strong>"Why it was sent"</strong> — Full audit trail + explainability for every send</li>
+                <li><i class="bi bi-file-text-fill"></i> <strong>Full audit trail</strong> — Every decision logged in automation_runs table</li>
               </ul>
             </div>
           </div>
@@ -374,7 +381,7 @@
                   </div>
                   <div class="control-item">
                     <span class="control-label">Confidence threshold</span>
-                    <span class="control-value">High</span>
+                    <span class="control-value">0.85 (High)</span>
                   </div>
                 </div>
               </div>
@@ -383,6 +390,74 @@
         </div>
       </div>
     </section><!-- /AI Operator Assist+ Section -->
+
+    <!-- AI Agents Section -->
+    <section id="ai-agents" class="ai-agents section dark-background">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Four AI Agents Working For You</h2>
+          <p class="section-subtitle">Powered by Claude AI — each agent handles a specific part of the workflow</p>
+        </div>
+
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="ai-agent-card">
+              <div class="agent-icon">
+                <i class="bi bi-envelope-open-text"></i>
+              </div>
+              <div class="agent-content">
+                <h3>Thread Extraction Agent</h3>
+                <p>Reads forwarded emails, analyzes context, and identifies actionable requests. Outputs structured proposals with confidence scores (0.0-1.0), suggested types, and due dates.</p>
+                <span class="agent-trigger">Triggered: When you forward an email</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="ai-agent-card">
+              <div class="agent-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <div class="agent-content">
+                <h3>Autopilot Engine (Assist+)</h3>
+                <p>Evaluates policy rules and decides: AUTO_SEND, DRAFT_ONLY, or BLOCKED. Checks confidence thresholds, trust seeding, business hours, daily caps, and cooldowns.</p>
+                <span class="agent-trigger">Triggered: When auto-extract is enabled</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="ai-agent-card">
+              <div class="agent-icon">
+                <i class="bi bi-chat-left-dots"></i>
+              </div>
+              <div class="agent-content">
+                <h3>Reply Classification Agent</h3>
+                <p>Interprets client replies and classifies them as APPROVED, REJECTED, or AMBIGUOUS. Updates request status automatically and flags unclear responses for human review.</p>
+                <span class="agent-trigger">Triggered: When client replies to a request</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="ai-agent-card">
+              <div class="agent-icon">
+                <i class="bi bi-bell"></i>
+              </div>
+              <div class="agent-content">
+                <h3>Nudge Generation Agent</h3>
+                <p>Creates contextual follow-up emails based on request details, days waiting, and reminder count. Escalates tone appropriately while respecting a 4-hour anti-spam rule.</p>
+                <span class="agent-trigger">Triggered: Manual nudge or scheduled reminder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="300">
+          <p class="ai-agents-note"><i class="bi bi-shield-check"></i> All AI decisions are logged in <code>ai_decision_logs</code> for full transparency and debugging</p>
+        </div>
+      </div>
+    </section><!-- /AI Agents Section -->
 
     <!-- Email Threading Moat Section -->
     <section id="email-threading" class="email-threading section dark-background">
@@ -652,7 +727,7 @@
                   <i class="bi bi-rocket-takeoff"></i>
                 </div>
                 <div class="pilot-box-title">
-                  <span class="pilot-box-badge">30-Day Free Pilot</span>
+                  <span class="pilot-box-badge">14-Day Free Pilot</span>
                   <h2>What to expect from your pilot</h2>
                   <p class="pilot-box-tagline">Forward one thread. Create 1 request. See it complete.</p>
                 </div>
@@ -668,7 +743,7 @@
                 <div class="pilot-expectation">
                   <i class="bi bi-calendar-x"></i>
                   <div>
-                    <strong>Sending stops after day 30</strong>
+                    <strong>Sending stops after day 14</strong>
                     <p>View-only mode continues. Upgrade anytime to resume.</p>
                   </div>
                 </div>
@@ -682,13 +757,13 @@
                 <div class="pilot-expectation">
                   <i class="bi bi-lightning-charge"></i>
                   <div>
-                    <strong>5 active clients, 300 emails</strong>
+                    <strong>10 active clients, 50 requests, 100 AI analyses</strong>
                     <p>Enough to prove the value in week one.</p>
                   </div>
                 </div>
               </div>
               <div class="pilot-box-cta">
-                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-pilot-box">Start free 30-day pilot</a>
+                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-pilot-box">Start free 14-day pilot</a>
               </div>
             </div>
           </div>
@@ -845,7 +920,7 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>What is TaskAt? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>TaskAt is an email-first client request and approval system. You forward a client email → TaskAt turns it into a trackable request (Upload, Approve, or Answer) → your client receives it in their inbox, completes it, and you see the result in your dashboard. No portals. No passwords for clients.</p>
+                  <p>TaskAt is an email-first client request and approval system. You forward a client email → TaskAt turns it into a trackable request (Upload, Approve, Answer, Confirm, Schedule, Review, Checklist, or Rating) → your client receives it in their inbox, completes it, and you see the result in your dashboard. No portals. No passwords for clients.</p>
                 </div>
               </div>
 
@@ -864,16 +939,16 @@
               </div>
 
               <div class="faq-item" onclick="this.classList.toggle('open')">
-                <h5>What happens during the 30-day free pilot? <i class="bi bi-chevron-down"></i></h5>
+                <h5>What happens during the 14-day free pilot? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>You get full access to all features. We help you set up, migrate existing threads if needed, and check in weekly. At the end, you choose to upgrade or stay in view-only mode (no sending, but you keep access to everything).</p>
+                  <p>You get full access to all features with limits: 50 requests, 10 active clients, and 100 AI analyses. We help you set up, migrate existing threads if needed, and check in weekly. At the end, you choose to upgrade or stay in view-only mode (no sending, but you keep access to everything).</p>
                 </div>
               </div>
 
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>Is TaskAt secure? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>Yes. All data is encrypted in transit (TLS) and at rest (AES-256). We don't sell or share your data. Files are stored securely and can be exported anytime. We're working toward SOC 2 compliance.</p>
+                  <p>Yes. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). Files are virus-scanned with ClamAV before storage. Portal tokens are bcrypt-hashed (never stored in plaintext). Rate limiting protects against abuse. We don't sell or share your data. SOC 2 compliance in progress.</p>
                 </div>
               </div>
 
@@ -887,7 +962,7 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>What happens after my pilot ends? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>After 30 days, sending pauses but you keep full access to view your dashboard, client history, and all uploaded files. You can stay in view-only mode or upgrade anytime to resume sending.</p>
+                  <p>After 14 days (or when limits are reached), sending pauses but you keep full access to view your dashboard, client history, and all uploaded files. You can stay in view-only mode or upgrade anytime to resume sending.</p>
                 </div>
               </div>
 
