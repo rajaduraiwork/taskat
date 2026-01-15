@@ -897,6 +897,37 @@ section,
   margin: 0 8px;
 }
 
+.hero .hero-content .hero-audience {
+  font-size: 0.9rem;
+  color: #A0B0C0;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.hero .hero-content .hero-draft-note {
+  font-size: 0.8rem;
+  color: #7A8A9A;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.hero .hero-content .hero-draft-note i {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+.hero .hero-content .hero-pilot-cohort {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.hero .hero-content .hero-pilot-cohort i {
+  margin-right: 6px;
+}
+
 @media (max-width: 576px) {
   .hero .hero-content .hero-actions {
     flex-direction: column;
