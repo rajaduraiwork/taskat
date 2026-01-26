@@ -92,68 +92,86 @@
 
           <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="200">
             <div class="hero-content">
-              <h1 class="hero-title">Stop chasing clients for approvals and assets.</h1>
-              <p class="hero-description">Forward client emails → TaskAt drafts trackable requests for your review. Nudges automatically. See what's blocking delivery.</p>
-              <p class="hero-audience">For marketing, creative, and service agencies managing 5–100+ active clients.</p>
+              <h1 class="hero-title">Turn client emails into Requests + Team Tasks.</h1>
+              <p class="hero-description">Forward an email thread → TaskAt extracts client requests (approve/upload/answer) and team tasks (deliverables/owners) in one view.</p>
+              <p class="hero-description-2">Auto-nudges the right person until it's done.</p>
+              <p class="hero-oneview"><i class="bi bi-layout-split"></i> Per-thread command center (requests + tasks + status)</p>
+              <p class="hero-audience">For agencies, ops teams, and anyone who chases people via email.</p>
               <div class="hero-actions">
-                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free 14-day pilot</a>
+                <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free pilot</a>
                 <a href="https://platform.taskat.ai/demo" class="btn-secondary">
                   <i class="bi bi-play-circle"></i>
                   <span>Watch 60-sec demo</span>
                 </a>
               </div>
-              <p class="hero-reassurance"><i class="bi bi-google"></i> <i class="bi bi-microsoft"></i> Gmail/Outlook <span class="sep">•</span> <i class="bi bi-person-check"></i> No client login <span class="sep">•</span> <i class="bi bi-clock"></i> Setup in ~5 min</p>
+              <div class="hero-trust-chips">
+                <span class="trust-chip"><i class="bi bi-check-lg"></i> Gmail/Outlook</span>
+                <span class="trust-chip"><i class="bi bi-check-lg"></i> No client login</span>
+                <span class="trust-chip"><i class="bi bi-check-lg"></i> Setup in 5 min</span>
+              </div>
               <p class="hero-draft-note"><i class="bi bi-shield-check"></i> Draft-first by default. Optional Assist+ can auto-send safe request types.</p>
-              <p class="hero-pilot-cohort"><i class="bi bi-people"></i> Join 20+ agencies in our early pilot cohort</p>
+              <p class="hero-pilot-cohort"><i class="bi bi-people"></i> Join 20+ teams in our early pilot cohort</p>
             </div>
           </div>
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="300">
             <div class="hero-visual">
+              <div class="dashboard-snippet">
+                <div class="dashboard-header">
+                  <span class="dashboard-title"><i class="bi bi-envelope-open"></i> Acme Corp — Q1 Campaign Launch</span>
+                  <span class="dashboard-thread-meta">Thread • 14 messages • Last activity 2h ago</span>
+                </div>
+                <div class="dashboard-section-label"><i class="bi bi-person-check"></i> Client Requests <span class="section-count">2</span></div>
+                <div class="client-row">
+                  <div class="client-info">
+                    <span class="client-name">Approve Q1 calendar</span>
+                    <span class="client-timestamp">Due: Jan 24 • 2 nudges sent</span>
+                  </div>
+                  <span class="status-badge blocked">Waiting 4d</span>
+                </div>
+                <div class="client-row">
+                  <div class="client-info">
+                    <span class="client-name">Upload brand assets</span>
+                    <span class="client-timestamp">Due: Jan 22 • 1 nudge sent</span>
+                  </div>
+                  <span class="status-badge overdue">Overdue 2d</span>
+                </div>
+                <div class="dashboard-section-label"><i class="bi bi-people"></i> Team Tasks <span class="section-count">2</span></div>
+                <div class="client-row">
+                  <div class="client-info">
+                    <span class="client-name">Create ad variations</span>
+                    <span class="client-timestamp">Assigned: Sarah • Due: Jan 26</span>
+                  </div>
+                  <span class="status-badge task-progress">In progress</span>
+                </div>
+                <div class="client-row">
+                  <div class="client-info">
+                    <span class="client-name">Schedule launch call</span>
+                    <span class="client-timestamp">Assigned: Mike • Due: Jan 28</span>
+                  </div>
+                  <span class="status-badge task-pending">Pending</span>
+                </div>
+              </div>
               <div class="email-request-card">
                 <div class="card-top-bar">
-                  <span class="app-label">TaskAt</span>
-                  <span class="card-type-pill">Request</span>
+                  <span class="app-label"><i class="bi bi-send-check"></i> Client Portal</span>
+                  <span class="card-type-pill">Approval Request</span>
                 </div>
                 <div class="card-header">
-                  <span class="from-label">From: you@agency.com</span>
+                  <span class="from-label">From: you@agency.com • To: sarah@acmecorp.com</span>
                   <h3>Approve Q1 Content Calendar</h3>
                   <p>Review and approve the proposed content calendar for January-March.</p>
                 </div>
                 <div class="card-meta">
-                  <span class="meta-item"><i class="bi bi-building"></i> Acme Corp</span>
+                  <span class="meta-item"><i class="bi bi-clock"></i> Sent Jan 20, 10:32 AM</span>
                   <span class="meta-divider">•</span>
-                  <span class="meta-item"><i class="bi bi-clock"></i> Sent 2d ago</span>
+                  <span class="meta-item"><i class="bi bi-bell"></i> 2 reminders sent</span>
                   <span class="meta-divider">•</span>
-                  <span class="meta-item"><i class="bi bi-bell"></i> 2 reminders</span>
+                  <span class="meta-item status-waiting"><i class="bi bi-hourglass-split"></i> Awaiting response</span>
                 </div>
                 <div class="card-actions">
                   <button class="btn-approve">Approve</button>
                   <button class="btn-request-changes">Request changes</button>
-                </div>
-              </div>
-              <div class="dashboard-snippet">
-                <div class="dashboard-header">Waiting on client</div>
-                <div class="client-row">
-                  <div class="client-info">
-                    <span class="client-name">Acme Corp</span>
-                    <span class="client-timestamp">Last touched 6h ago</span>
-                  </div>
-                  <span class="status-badge blocked">Blocked 4 days</span>
-                </div>
-                <div class="client-row">
-                  <div class="client-info">
-                    <span class="client-name">TechStart Inc</span>
-                    <span class="client-timestamp">Last touched 2d ago</span>
-                  </div>
-                  <span class="status-badge overdue">Overdue 2 days</span>
-                </div>
-                <div class="client-row">
-                  <div class="client-info">
-                    <span class="client-name">BrandCo</span>
-                    <span class="client-timestamp">Last touched 12h ago</span>
-                  </div>
-                  <span class="status-badge waiting">Waiting 1 day</span>
                 </div>
               </div>
             </div>
@@ -169,8 +187,8 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
-            <h2 class="section-title">Your team ships fast. Client follow-ups don't.</h2>
-            <p class="section-subtitle">That's normal. TaskAt fixes the follow-up layer.</p>
+            <h2 class="section-title">Client threads are messy. Work gets lost.</h2>
+            <p class="section-subtitle">Client requests buried in email. Team tasks scattered across tools. TaskAt unifies both.</p>
           </div>
         </div>
 
@@ -207,10 +225,10 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="pain-point pain-waiting">
-              <i class="bi bi-x-circle"></i>
+              <i class="bi bi-list-task"></i>
               <div class="pain-content">
-                <h4>Clients won't log into ClickUp/Asana</h4>
-                <p class="pain-impact">Portal adoption stays at zero.</p>
+                <h4>Internal tasks hidden in email threads</h4>
+                <p class="pain-impact">Deliverables and assignments get lost in the noise.</p>
               </div>
             </div>
           </div>
@@ -219,8 +237,8 @@
             <div class="pain-point pain-highlight">
               <i class="bi bi-arrows-angle-contract"></i>
               <div class="pain-content">
-                <h4>The cost of scattered feedback</h4>
-                <p class="pain-impact">Revision creep, scope confusion, and delays you can't bill for.</p>
+                <h4>No single view of what's blocking delivery</h4>
+                <p class="pain-impact">Client requests in one place, team tasks in another. Chaos in between.</p>
               </div>
             </div>
           </div>
@@ -235,18 +253,18 @@
           <div class="bridge-arrow"><i class="bi bi-chevron-right"></i></div>
           <div class="bridge-step">
             <div class="bridge-icon"><i class="bi bi-magic"></i></div>
-            <span>TaskAt extracts what's needed</span>
+            <span>TaskAt extracts requests + tasks</span>
           </div>
           <div class="bridge-arrow"><i class="bi bi-chevron-right"></i></div>
           <div class="bridge-step">
-            <div class="bridge-icon"><i class="bi bi-send-check"></i></div>
-            <span>Send one-click request + auto follow-ups</span>
+            <div class="bridge-icon"><i class="bi bi-layout-split"></i></div>
+            <span>Track both in one thread view</span>
           </div>
         </div>
 
         <div class="row mt-4">
           <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
-            <p class="tagline">TaskAt tracks what you're waiting on, drafts nudges, and collects uploads—without moving clients into your PM tool.</p>
+            <p class="tagline">TaskAt extracts client requests and team tasks from email threads—tracks both, nudges automatically, no client login required.</p>
             <a href="#how-it-works" class="see-how-link">See how it works <i class="bi bi-arrow-down"></i></a>
           </div>
         </div>
@@ -258,7 +276,7 @@
     <section id="how-it-works" class="how-it-works section dark-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Works from email. Keeps projects moving.</h2>
-        <p class="section-subtitle">Forward client emails → send one-click requests → TaskAt follows up until it's done.</p>
+        <p class="section-subtitle">Forward client emails → TaskAt extracts requests + tasks → Track everything in one thread view.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -268,21 +286,19 @@
             <div class="step-card">
               <div class="step-header">
                 <span class="step-number">1</span>
-                <h3>Turn an email into a request</h3>
+                <h3>Forward an email thread</h3>
               </div>
               <div class="step-icon">
                 <i class="bi bi-envelope-arrow-up"></i>
               </div>
-              <p>Forward a client email. TaskAt pulls out what you need from 8 request types.</p>
+              <p>TaskAt extracts client requests (8 types) and internal team tasks from the same thread.</p>
               <div class="step-chips">
                 <span class="chip upload">Upload</span>
                 <span class="chip approve">Approve</span>
                 <span class="chip answer">Answer</span>
                 <span class="chip confirm">Confirm</span>
-                <span class="chip schedule">Schedule</span>
-                <span class="chip review">Review</span>
-                <span class="chip checklist">Checklist</span>
-                <span class="chip rating">Rating</span>
+                <span class="chip task">Tasks</span>
+                <span class="chip assign">Assign</span>
               </div>
             </div>
           </div>
@@ -291,16 +307,16 @@
             <div class="step-card">
               <div class="step-header">
                 <span class="step-number">2</span>
-                <h3>Client completes it in one click</h3>
+                <h3>Review drafts, then create</h3>
               </div>
               <div class="step-icon">
-                <i class="bi bi-cursor"></i>
+                <i class="bi bi-pencil-square"></i>
               </div>
-              <p>No account. One clean action page — works on mobile.</p>
+              <p>AI drafts proposals first (safe by default). You review, edit if needed, and create. Nothing sends without your approval.</p>
               <div class="step-chips">
-                <span class="chip feature">No login</span>
-                <span class="chip feature">1-click</span>
-                <span class="chip feature">Mobile</span>
+                <span class="chip feature">Draft-first</span>
+                <span class="chip feature">You control</span>
+                <span class="chip feature">Edit anytime</span>
               </div>
             </div>
           </div>
@@ -309,24 +325,189 @@
             <div class="step-card">
               <div class="step-header">
                 <span class="step-number">3</span>
-                <h3>TaskAt keeps it moving</h3>
+                <h3>Track everything in one view</h3>
               </div>
               <div class="step-icon">
-                <i class="bi bi-arrow-repeat"></i>
+                <i class="bi bi-layout-split"></i>
               </div>
-              <p>Draft nudges, schedule reminders, and flag what's stuck so nothing slips.</p>
+              <p>See client requests and team tasks per thread. Auto-nudges for clients. Progress tracking for your team.</p>
               <div class="step-chips">
                 <span class="chip status-risk">At risk</span>
-                <span class="chip status-nudge">Nudge draft</span>
-                <span class="chip status-reminder">Reminders</span>
+                <span class="chip status-nudge">Auto-nudge</span>
+                <span class="chip status-reminder">Thread view</span>
               </div>
             </div>
           </div>
 
         </div>
 
+        <!-- Workflow Clarity Callout -->
+        <div class="workflow-callout" data-aos="fade-up" data-aos-delay="350">
+          <div class="workflow-callout-inner">
+            <div class="workflow-step">
+              <div class="workflow-step-icon draft"><i class="bi bi-file-earmark-text"></i></div>
+              <div class="workflow-step-content">
+                <span class="workflow-step-label">Proposals</span>
+                <p>AI drafts suggestions from your email. Safe by default — nothing happens until you act.</p>
+              </div>
+            </div>
+            <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+            <div class="workflow-step">
+              <div class="workflow-step-icon create"><i class="bi bi-plus-circle"></i></div>
+              <div class="workflow-step-content">
+                <span class="workflow-step-label">Create</span>
+                <p>Review, edit, and create. Items become active requests or tasks.</p>
+              </div>
+            </div>
+            <div class="workflow-arrow"><i class="bi bi-arrow-right"></i></div>
+            <div class="workflow-step">
+              <div class="workflow-step-icon manage"><i class="bi bi-kanban"></i></div>
+              <div class="workflow-step-content">
+                <span class="workflow-step-label">Manage</span>
+                <p>Created items stay linked to the thread AND appear in your global Tasks/Requests dashboards.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Before vs After -->
+        <div class="before-after" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="before-after-title">The difference TaskAt makes</h3>
+          <div class="before-after-grid">
+            <div class="before-card">
+              <div class="ba-header"><i class="bi bi-x-circle"></i> Before</div>
+              <ul class="ba-list">
+                <li><i class="bi bi-envelope"></i> Email thread with scattered asks</li>
+                <li><i class="bi bi-brain"></i> Reminders kept in your head</li>
+                <li><i class="bi bi-question-circle"></i> Missed items and unclear status</li>
+                <li><i class="bi bi-clock-history"></i> Hours spent on manual follow-ups</li>
+              </ul>
+            </div>
+            <div class="after-card">
+              <div class="ba-header"><i class="bi bi-check-circle"></i> After</div>
+              <ul class="ba-list">
+                <li><i class="bi bi-envelope-arrow-up"></i> Forward email → AI proposes tasks + requests</li>
+                <li><i class="bi bi-pencil-square"></i> Review drafts → create with one click</li>
+                <li><i class="bi bi-layout-split"></i> Per-thread tracking + global dashboards</li>
+                <li><i class="bi bi-bell"></i> Auto-nudges + complete audit trail</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI Showcase: Thread as the Hub -->
+        <div class="ui-showcase" data-aos="fade-up" data-aos-delay="350">
+          <h3 class="ui-showcase-title">One thread. Everything tracked.</h3>
+          <p class="ui-showcase-subtitle">See how TaskAt turns email chaos into a command center</p>
+
+          <div class="ui-showcase-container">
+            <!-- Inbox View -->
+            <div class="ui-panel inbox-panel" data-aos="fade-right" data-aos-delay="400">
+              <div class="ui-panel-header">
+                <i class="bi bi-inbox"></i> Inbox
+                <span class="ui-panel-count">12 threads</span>
+              </div>
+              <div class="ui-panel-body">
+                <div class="thread-row active">
+                  <div class="thread-avatar">AC</div>
+                  <div class="thread-info">
+                    <span class="thread-client">Acme Corp</span>
+                    <span class="thread-subject">Q1 Campaign Assets</span>
+                  </div>
+                  <span class="thread-status status-review">Needs review</span>
+                </div>
+                <div class="thread-row">
+                  <div class="thread-avatar">TS</div>
+                  <div class="thread-info">
+                    <span class="thread-client">TechStart Inc</span>
+                    <span class="thread-subject">Brand Guidelines Update</span>
+                  </div>
+                  <span class="thread-status status-new">New</span>
+                </div>
+                <div class="thread-row">
+                  <div class="thread-avatar">BC</div>
+                  <div class="thread-info">
+                    <span class="thread-client">BrandCo</span>
+                    <span class="thread-subject">Website Redesign</span>
+                  </div>
+                  <span class="thread-status status-ready">Ready</span>
+                </div>
+                <div class="thread-row">
+                  <div class="thread-avatar">MG</div>
+                  <div class="thread-info">
+                    <span class="thread-client">MediaGroup</span>
+                    <span class="thread-subject">Social Media Calendar</span>
+                  </div>
+                  <span class="thread-status status-waiting">Waiting</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Thread Detail View -->
+            <div class="ui-panel thread-panel" data-aos="fade-left" data-aos-delay="500">
+              <div class="ui-panel-header">
+                <div class="thread-header-info">
+                  <span class="thread-header-client">Acme Corp</span>
+                  <span class="thread-header-subject">Q1 Campaign Assets</span>
+                </div>
+                <button class="btn-open-full"><i class="bi bi-arrows-fullscreen"></i></button>
+              </div>
+
+              <!-- AI Analysis -->
+              <div class="ai-analysis-box">
+                <div class="ai-analysis-header">
+                  <i class="bi bi-stars"></i> AI Analysis
+                </div>
+                <div class="ai-analysis-content">
+                  <p>Client needs final approval on 3 ad creatives before Friday. Also requesting hi-res logo files. Team should prepare social media variants.</p>
+                </div>
+              </div>
+
+              <!-- Items in Thread -->
+              <div class="items-section">
+                <div class="items-header">
+                  <span>Items in this thread</span>
+                  <div class="items-tabs">
+                    <button class="tab-btn active">Proposals <span class="tab-count">3</span></button>
+                    <button class="tab-btn">Created <span class="tab-count">2</span></button>
+                  </div>
+                </div>
+
+                <div class="items-grid">
+                  <div class="items-column">
+                    <div class="items-column-header"><i class="bi bi-person-check"></i> Client Requests</div>
+                    <div class="item-card request-card">
+                      <div class="item-type approve">Approve</div>
+                      <div class="item-title">Ad creatives for Q1</div>
+                      <div class="item-meta"><i class="bi bi-clock"></i> Due Fri</div>
+                    </div>
+                    <div class="item-card request-card">
+                      <div class="item-type upload">Upload</div>
+                      <div class="item-title">Hi-res logo files</div>
+                      <div class="item-meta"><i class="bi bi-hourglass"></i> Waiting</div>
+                    </div>
+                  </div>
+                  <div class="items-column">
+                    <div class="items-column-header"><i class="bi bi-people"></i> Team Tasks</div>
+                    <div class="item-card task-card">
+                      <div class="item-type task">Task</div>
+                      <div class="item-title">Create social variants</div>
+                      <div class="item-meta"><i class="bi bi-person"></i> Sarah</div>
+                    </div>
+                    <div class="item-card task-card">
+                      <div class="item-type task">Task</div>
+                      <div class="item-title">Schedule launch call</div>
+                      <div class="item-meta"><i class="bi bi-person"></i> Mike</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- CTA under cards -->
-        <div class="how-it-works-cta" data-aos="fade-up" data-aos-delay="400">
+        <div class="how-it-works-cta" data-aos="fade-up" data-aos-delay="600">
           <a href="https://platform.taskat.ai/auth/sign-up" class="btn-primary">Start free pilot</a>
           <a href="https://platform.taskat.ai/demo" class="btn-secondary">
             <i class="bi bi-play-circle"></i>
@@ -336,6 +517,115 @@
       </div>
     </section><!-- /How It Works Section -->
 
+    <!-- Per-Thread Visibility Section -->
+    <section id="thread-visibility" class="thread-visibility section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="100">
+            <div class="thread-visibility-visual">
+              <div class="thread-page-mockup">
+                <div class="mockup-header">
+                  <div class="mockup-breadcrumb">
+                    <span class="breadcrumb-item"><i class="bi bi-inbox"></i> Inbox</span>
+                    <i class="bi bi-chevron-right"></i>
+                    <span class="breadcrumb-item active">Acme Corp — Q1 Campaign</span>
+                  </div>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-section">
+                    <div class="mockup-section-header">
+                      <i class="bi bi-person-check"></i> Client Requests
+                      <span class="mockup-count">2</span>
+                    </div>
+                    <div class="mockup-items">
+                      <div class="mockup-item">
+                        <span class="item-pill approve">Approve</span>
+                        <span class="item-text">Ad creatives</span>
+                        <span class="item-status waiting">Waiting 3d</span>
+                      </div>
+                      <div class="mockup-item">
+                        <span class="item-pill upload">Upload</span>
+                        <span class="item-text">Logo files</span>
+                        <span class="item-status done">Done</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mockup-section">
+                    <div class="mockup-section-header">
+                      <i class="bi bi-people"></i> Team Tasks
+                      <span class="mockup-count">3</span>
+                    </div>
+                    <div class="mockup-items">
+                      <div class="mockup-item">
+                        <span class="item-pill task">Task</span>
+                        <span class="item-text">Create variants</span>
+                        <span class="item-status progress">In progress</span>
+                      </div>
+                      <div class="mockup-item">
+                        <span class="item-pill task">Task</span>
+                        <span class="item-text">Schedule call</span>
+                        <span class="item-status pending">Pending</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mockup-sidepanel">
+                  <div class="sidepanel-header">
+                    <span>Ad creatives approval</span>
+                    <button class="btn-expand"><i class="bi bi-arrows-fullscreen"></i></button>
+                  </div>
+                  <div class="sidepanel-body">
+                    <div class="sidepanel-field">
+                      <span class="field-label">Status</span>
+                      <span class="field-value status-waiting">Waiting</span>
+                    </div>
+                    <div class="sidepanel-field">
+                      <span class="field-label">Due</span>
+                      <span class="field-value">Friday</span>
+                    </div>
+                    <div class="sidepanel-field">
+                      <span class="field-label">Reminders</span>
+                      <span class="field-value">2 sent</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+            <div class="thread-visibility-content">
+              <span class="section-label">Per-thread visibility</span>
+              <h2>Everything for this client thread — right here.</h2>
+              <p class="section-lead">No more hunting across global task lists, request dashboards, and email threads. One page shows the complete picture.</p>
+              <ul class="visibility-features">
+                <li>
+                  <i class="bi bi-layout-split"></i>
+                  <div>
+                    <strong>See all tasks + requests for this email thread</strong>
+                    <span>Client requests on one side, team tasks on the other. Instantly see what's blocking delivery.</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-window-sidebar"></i>
+                  <div>
+                    <strong>Open any item in a side panel</strong>
+                    <span>Update status, add notes, or jump to full view — without losing your place.</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-x-circle"></i>
+                  <div>
+                    <strong>No hunting across global lists</strong>
+                    <span>Everything related to this client conversation lives in one place.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Per-Thread Visibility Section -->
+
     <!-- AI Operator Assist+ Section -->
     <section id="assist-plus" class="assist-plus section light-background">
       <div class="container" data-aos="fade-up">
@@ -344,19 +634,58 @@
             <div class="assist-plus-content">
               <span class="assist-plus-badge">Beta</span>
               <h2>Meet AI Operator — Assist+</h2>
-              <p class="assist-plus-tagline">Two-level AI automation: Level 1 auto-drafts, Level 2 auto-sends with guardrails.</p>
+              <p class="assist-plus-tagline">Thread Extraction Agent outputs two lists: Internal Tasks + External Requests. Then automation takes over.</p>
               <ul class="assist-plus-features">
-                <li><i class="bi bi-check-circle-fill"></i> <strong>Auto-sends Upload + Answer only</strong> — Approvals always require human review</li>
-                <li><i class="bi bi-sliders"></i> <strong>Confidence threshold: 0.85</strong> — Only sends when AI is highly confident</li>
+                <li><i class="bi bi-cpu"></i> <strong>Extracts tasks + requests from every thread</strong> — Due dates, owners, and confidence scores</li>
+                <li><i class="bi bi-check-circle-fill"></i> <strong>Auto-sends Upload + Answer requests only</strong> — Approvals always require human review</li>
+                <li><i class="bi bi-sliders"></i> <strong>Confidence threshold: 0.85</strong> — Only acts when AI is highly confident</li>
                 <li><i class="bi bi-clock-fill"></i> <strong>Respects business hours, cooldowns, caps</strong> — No spamming your clients</li>
-                <li><i class="bi bi-person-check-fill"></i> <strong>Trust seeding required</strong> — At least one manual request before auto-send</li>
-                <li><i class="bi bi-shield-exclamation"></i> <strong>Emergency kill switch</strong> — Pause all auto-sends instantly</li>
-                <li><i class="bi bi-file-text-fill"></i> <strong>Full audit trail</strong> — Every decision logged in automation_runs table</li>
+                <li><i class="bi bi-shield-exclamation"></i> <strong>Emergency kill switch</strong> — Pause all automation instantly</li>
+                <li><i class="bi bi-file-text-fill"></i> <strong>Full audit trail</strong> — Every decision logged for review</li>
               </ul>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <div class="assist-plus-visual">
+              <!-- Extraction Output Card -->
+              <div class="extraction-output-card">
+                <div class="extraction-output-header">
+                  <i class="bi bi-stars"></i>
+                  <span>Thread Extraction Output</span>
+                </div>
+                <div class="extraction-output-body">
+                  <div class="extraction-stats">
+                    <div class="stat-item">
+                      <span class="stat-value">12</span>
+                      <span class="stat-label">Tasks</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                      <span class="stat-value">2</span>
+                      <span class="stat-label">Requests</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                      <span class="stat-value">8</span>
+                      <span class="stat-label">Due dates</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                      <span class="stat-value">5</span>
+                      <span class="stat-label">Owners</span>
+                    </div>
+                  </div>
+                  <div class="extraction-confidence">
+                    <span class="confidence-label">Avg confidence</span>
+                    <div class="confidence-bar">
+                      <div class="confidence-fill" style="width: 92%"></div>
+                    </div>
+                    <span class="confidence-value">0.92</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Assist+ Controls Card -->
               <div class="assist-plus-card">
                 <div class="assist-plus-card-header">
                   <i class="bi bi-robot"></i>
@@ -374,14 +703,6 @@
                   <div class="control-item">
                     <span class="control-label">Business hours</span>
                     <span class="control-value">9am – 6pm</span>
-                  </div>
-                  <div class="control-item">
-                    <span class="control-label">Cooldown</span>
-                    <span class="control-value">48 hours</span>
-                  </div>
-                  <div class="control-item">
-                    <span class="control-label">Daily cap</span>
-                    <span class="control-value">5 per client</span>
                   </div>
                   <div class="control-item">
                     <span class="control-label">Confidence threshold</span>
@@ -411,7 +732,7 @@
               </div>
               <div class="agent-content">
                 <h3>Thread Extraction Agent</h3>
-                <p>Reads forwarded emails, analyzes context, and identifies actionable requests. Outputs structured proposals with confidence scores (0.0-1.0), suggested types, and due dates.</p>
+                <p>Reads forwarded emails, analyzes context, and identifies actionable work (tasks + requests). Outputs two lists: internal tasks with owners, and external requests with confidence scores, types, and due dates.</p>
                 <span class="agent-trigger">Triggered: When you forward an email</span>
               </div>
             </div>
@@ -609,6 +930,83 @@
         </div>
       </div>
     </section><!-- /Common Client Blockers Section -->
+
+    <!-- Who Uses TaskAt Section -->
+    <section id="who-uses" class="who-uses section dark-background">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Who uses TaskAt?</h2>
+          <p class="section-subtitle">Any team that chases external parties via email</p>
+        </div>
+
+        <div class="row gy-4 mt-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="persona-card">
+              <div class="persona-icon"><i class="bi bi-megaphone"></i></div>
+              <h3>Agencies</h3>
+              <p>Marketing, creative, and service agencies managing 5–100+ active clients.</p>
+              <ul class="persona-uses">
+                <li>Client approvals & feedback</li>
+                <li>Asset collection</li>
+                <li>Access credentials</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="persona-card">
+              <div class="persona-icon"><i class="bi bi-shield-check"></i></div>
+              <h3>Compliance / SOC 2</h3>
+              <p>Security and compliance teams running audits and vendor assessments.</p>
+              <ul class="persona-uses">
+                <li>Evidence collection</li>
+                <li>Vendor questionnaires</li>
+                <li>Policy acknowledgments</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="persona-card">
+              <div class="persona-icon"><i class="bi bi-pc-display"></i></div>
+              <h3>IT / Access</h3>
+              <p>IT teams coordinating access requests and credential management.</p>
+              <ul class="persona-uses">
+                <li>Access confirmations</li>
+                <li>License approvals</li>
+                <li>Security form collection</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="persona-card">
+              <div class="persona-icon"><i class="bi bi-people"></i></div>
+              <h3>Ops / Onboarding</h3>
+              <p>Operations teams handling employee and vendor onboarding.</p>
+              <ul class="persona-uses">
+                <li>Document collection</li>
+                <li>Form completions</li>
+                <li>Onboarding checklists</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="persona-card">
+              <div class="persona-icon"><i class="bi bi-currency-dollar"></i></div>
+              <h3>Finance</h3>
+              <p>Finance teams collecting documents and approvals from vendors/clients.</p>
+              <ul class="persona-uses">
+                <li>W-9 / tax forms</li>
+                <li>Invoice approvals</li>
+                <li>Contract signatures</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Who Uses TaskAt Section -->
 
     <!-- Starter Kits Section -->
     <section id="starter-kits" class="starter-kits section dark-background">
@@ -945,7 +1343,10 @@
               <div class="faq-item" onclick="this.classList.toggle('open')">
                 <h5>Is TaskAt secure? <i class="bi bi-chevron-down"></i></h5>
                 <div class="faq-answer">
-                  <p>Yes. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). Files are virus-scanned with ClamAV before storage. Portal tokens are bcrypt-hashed (never stored in plaintext). Rate limiting protects against abuse. We don't sell or share your data. SOC 2 compliance in progress.</p>
+                  <p><strong>SOC 2 Type II:</strong> Currently in audit preparation (Q2 2025 target). We've implemented Trust Services Criteria controls for security, availability, and confidentiality.</p>
+                  <p><strong>Encryption:</strong> TLS 1.3 in transit, AES-256 at rest. Files virus-scanned (ClamAV) before storage. Portal tokens bcrypt-hashed.</p>
+                  <p><strong>Data handling:</strong> Forwarded emails stored for extraction and thread linking. 90-day retention by default (configurable). Role-based access control. We never sell or share your data.</p>
+                  <p><strong>Infrastructure:</strong> Hosted on AWS (US regions). Rate limiting, DDoS protection, and 24/7 monitoring.</p>
                 </div>
               </div>
 
